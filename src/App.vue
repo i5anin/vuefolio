@@ -1,5 +1,7 @@
 <template>
-  <router-view></router-view>
+  <div class="isDarkTheme">
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
@@ -10,5 +12,5 @@
 </script>
 
 <style lang="scss">
-  @import '@/assets/dark-theme';
+  @import 'assets/dark-theme';
 </style>
