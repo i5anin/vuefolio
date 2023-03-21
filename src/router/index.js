@@ -6,7 +6,7 @@ import ErrorPage from '@/components/ErrorPage.vue';
 const routes = [
   { path: '/', name: 'Home', component: HomePage },
   { path: '/about', name: 'About', component: AboutPage },
-  { path: '/*', name: 'Error', component: ErrorPage },
+  { path: '/:pathMatch(.*)', name: 'Error404', component: ErrorPage },
 ];
 
 const router = createRouter({
