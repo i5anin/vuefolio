@@ -1,6 +1,6 @@
 $primary-color: #007bff;
 $secondary-color: #6c757d;
-$background-color: #333333;
+$background-color: #0d1017;
 $text-color: #ffffff;
 
 #app {
@@ -12,10 +12,23 @@ $text-color: #ffffff;
   margin-top: 60px;
 }
 
+a {
+  text-decoration: none;
+  padding: 20px;
+  color: #828282;
+}
+
 .dark-theme {
   background-color: $background-color;
-  color: $text-color !important;
+  color: $text-color;
 
-  // Adjust other UI elements as necessary
   // При необходимости настройте другие элементы пользовательского интерфейса.
+}
+
+.tab {
+  outline: 1px solid rgb(255, 255, 255);
+}
+
+.title {
+  padding: 40px 0 0 0;
 }
