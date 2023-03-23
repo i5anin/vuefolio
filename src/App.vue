@@ -17,6 +17,7 @@
         <component :is="Component" />
       </transition>
     </router-view>
+    <Footer />
   </div>
 </template>
 
@@ -68,5 +69,23 @@
   .b-nav .active {
     background-color: #0074d9;
     color: #fff;
+  }
+</style>
+
+<style>
+  /* styles for the fixed-positioned footer */
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    border-top: 1px solid #e7e7e7;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .footer p {
+    margin-bottom: 0;
   }
 </style>
