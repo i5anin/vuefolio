@@ -22,7 +22,7 @@
 </template>
 
 <script>
-  import FooterPage from './components/FooterPage.vue';
+  import FooterPage from '@/vue/components/FooterPage.vue';
 
   export default {
     components: {
