@@ -7,14 +7,16 @@
         :key="index"
         :to="tabRoutes[index]"
         :title="tab">
-        <b-tab
-          :class="{ active: activeTab === index }"
-          @click="activeTab = index">
+        <b-tab :class="{ active: activeTab === index }">
           {{ tab }}
         </b-tab>
       </router-link>
     </b-tabs>
-    <router-view></router-view>
+    <router-view v-slot="{ Component }">
+      <transition name="fade" mode="out-in">
+        <component :is="Component" />
+      </transition>
+    </router-view>
   </div>
 </template>
 
@@ -27,21 +29,44 @@
         activeTab: 0,
       };
     },
+    mounted() {
+      const currentRoute = this.$router.currentRoute.path;
+      this.activeTab = this.tabRoutes.indexOf(currentRoute);
+    },
+    watch: {
+      $route(to) {
+        const index = this.tabRoutes.indexOf(to.path);
+        if (index >= 0) {
+          this.activeTab = index;
+        }
+      },
+    },
   };
 </script>
 
 <style lang="css">
-  @import 'assets/normalize.css';
   .active {
-    color: rgb(255, 255, 255);
-    text-shadow: 0 0 10px #00ffdd;
+    color: rgb(255, 140, 0);
   }
-  .b-nav .active {
-    background-color: #0074d9;
-    color: #fff;
+
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 0.5s;
+  }
+
+  .fade-enter,
+  .fade-leave-to {
+    opacity: 0;
   }
 </style>
 
 <style lang="scss">
   @import 'assets/dark-theme';
+</style>
+
+<style>
+  .b-nav .active {
+    background-color: #0074d9;
+    color: #fff;
+  }
 </style>
