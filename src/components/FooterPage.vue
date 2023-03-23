@@ -24,19 +24,3 @@
     },
   };
 </script>
-
-<style>
-  .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding-top: 15px;
-    box-sizing: border-box;
-    z-index: 999;
-  }
-</style>
