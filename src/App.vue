@@ -17,12 +17,17 @@
         <component :is="Component" />
       </transition>
     </router-view>
-    <Footer />
+    <FooterPage />
   </div>
 </template>
 
 <script>
+  import FooterPage from './components/FooterPage.vue';
+
   export default {
+    components: {
+      FooterPage,
+    },
     data() {
       return {
         tabs: ['Home', 'About', 'Projects', 'Contact'],

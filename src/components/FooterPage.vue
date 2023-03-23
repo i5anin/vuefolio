@@ -26,8 +26,6 @@
 </script>
 
 <style>
-  /* Your existing styles here */
-
   .footer {
     position: fixed;
     bottom: 0;
