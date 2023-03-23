@@ -13,12 +13,6 @@ $text-color: #ffffff;
   margin-top: 60px;
 }
 
-a {
-  text-decoration: none;
-  padding: 20px;
-  color: #828282;
-}
-
 .dark-theme {
   background-color: $background-color;
   color: $text-color;
@@ -26,6 +20,9 @@ a {
 
 .tab {
   outline: 1px solid rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 20px;
+  color: #828282;
 }
 
 .title {

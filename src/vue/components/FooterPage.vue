@@ -1,12 +1,18 @@
 <template>
   <div class="footer">
     <div>
-      <a>find me in:</a>
+      <a class="find-me">find me in:</a>
       <!-- <i class="icons bi bi-house-fill"></i> -->
       <!-- <i class="icons bi bi-envelope-fill"></i> -->
-      <i class="icons bi bi-github"></i>
-      <i class="icons bi bi-youtube"></i>
-      <i class="icons bi bi-bootstrap-fill"></i>
+      <a href="https://github.com/i5anin">
+        <i class="icons bi bi-github"></i>
+      </a>
+      <a href="https://www.youtube.com/c/SergeyIsanin">
+        <i class="icons bi bi-youtube"></i>
+      </a>
+      <a href="https://vk.com/i5anin"
+        ><i class="icons bi bi-bootstrap-fill"></i>
+      </a>
     </div>
     <p class="time">
       <i class="icons bi bi-bookmark-heart-fill"></i>{{ currentTime }}
