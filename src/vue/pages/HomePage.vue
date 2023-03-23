@@ -1,7 +1,16 @@
 <template>
-  <div>
-    <h1 class="title">Welcome to the Home Page</h1>
-    <p>This is the home page of our website.</p>
+  <div class="flex">
+    <div>
+      <p class="title">Hello! I am</p>
+      <h1 class="title">Sergey Isanin</h1>
+      <h2>Junior front-end developer</h2>
+
+      <p>// write the code below to continue</p>
+      <p class="color">> <span class="underline">w</span>hois</p>
+    </div>
+    <div>
+      <img src="@/assets/test.jpg" />
+    </div>
   </div>
 </template>
 
@@ -10,7 +19,3 @@
     name: 'HomePage',
   };
 </script>
-
-<style>
-  /* Add any styles for the Home component here */
-</style>

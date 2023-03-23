@@ -30,8 +30,8 @@
     },
     data() {
       return {
-        tabs: ['Home', 'About', 'Projects', 'Contact'],
-        tabRoutes: ['/', '/about', '/projects', '/contact'],
+        tabs: ['_hello', '_about me', '_projects'],
+        tabRoutes: ['/', '/about', '/projects'],
         activeTab: 0,
       };
     },

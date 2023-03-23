@@ -9,7 +9,3 @@
     name: 'ErrorPage',
   };
 </script>
-
-<style>
-  /* Add any styles for the Home component here */
-</style>

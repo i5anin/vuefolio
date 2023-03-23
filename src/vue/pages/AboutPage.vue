@@ -10,7 +10,3 @@
     name: 'AboutPage',
   };
 </script>
-
-<style>
-  /* Add any styles for the About component here */
-</style>
