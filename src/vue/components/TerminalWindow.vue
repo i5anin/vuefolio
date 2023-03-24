@@ -70,7 +70,7 @@
   }
   .terminal .value {
     text-align: left;
-    background: black;
+    background: $background-ton-color;
     color: rgb(157, 157, 157);
     font-weight: bold;
     padding: 8px;
@@ -82,7 +82,7 @@
     left: 15px; /* offset left by 23px */
     top: 35px; /* offset top by 23px */
     border-radius: 5px;
-    border: #05080d;
+    border: 1px solid black;
   }
   .space {
     margin: 25px;

@@ -4,10 +4,12 @@
       <div>
         <p class="hello">Hello! I am</p>
         <h1 class="fio">Sergey Isanin</h1>
-        <h2>Junior front-end developer</h2>
-        <h2 class="dev">I want to be a middle front-end developer</h2>
+        <h2 class="crossed-out">Junior front-end developer</h2>
+        <h2 class="dev color-blue">
+          I want to be a middle front-end developer
+        </h2>
 
-        <p class="color-blue">// write the code below to continue</p>
+        <p class="font-size20">// write the code below to continue</p>
         <p class="color-pink">> <span class="underline">w</span>hois</p>
       </div>
       <div>
@@ -72,6 +74,9 @@ see the project"
 
   .color-blue {
     color: rgb(161, 255, 242);
+  }
+
+  .font-size20 {
     font-size: 20px;
   }
 
