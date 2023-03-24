@@ -1,5 +1,5 @@
 <template>
-  <div class="project-page">
+  <div class="project-page-container">
     <h1 class="title">{{ project.title }}</h1>
     <div class="flex-center">
       <TerminalWindow
@@ -44,14 +44,15 @@ see the project"
 </script>
 
 <style scoped>
-  .project-page {
-    text-align: center;
-    /* display: flex; */
+  .project-page-container {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
   }
 
   .flex-center {
-    text-align: center;
     display: flex;
     justify-content: center;
   }

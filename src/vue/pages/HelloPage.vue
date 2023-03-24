@@ -1,25 +1,27 @@
 <template>
-  <div class="flex-center">
-    <div>
-      <p class="title">Hello! I am</p>
-      <h1 class="title">Sergey Isanin</h1>
-      <h2 class="crossed-out">Junior front-end developer</h2>
-      <h2>I want to be a middle front-end developer</h2>
+  <div class="hello-page-container">
+    <div class="flex-center">
+      <div>
+        <p class="title">Hello! I am</p>
+        <h1 class="title">Sergey Isanin</h1>
+        <h2 class="crossed-out">Junior front-end developer</h2>
+        <h2>I want to be a middle front-end developer</h2>
 
-      <p class="color-blue">// write the code below to continue</p>
-      <p class="color-pink">> <span class="underline">w</span>hois</p>
-    </div>
-    <div>
-      <TerminalWindow
-        pre-content="
+        <p class="color-blue">// write the code below to continue</p>
+        <p class="color-pink">> <span class="underline">w</span>hois</p>
+      </div>
+      <div>
+        <TerminalWindow
+          pre-content="
 /** 
 * Project 0 
 * Vue - fan
 */ 
 see the project"
-        header-content="Technologies Used 4, 1245 commits"
-        class="terminal-size" />
-      <!-- <img src="@/assets/test.jpg" /> -->
+          header-content="Technologies Used 4, 1245 commits"
+          class="terminal-size" />
+        <!-- <img src="@/assets/test.jpg" /> -->
+      </div>
     </div>
   </div>
 </template>
@@ -36,6 +38,13 @@ see the project"
 </script>
 
 <style scoped>
+  .hello-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
   .terminal-size {
     height: 250px;
     width: 450px;
