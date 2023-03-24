@@ -2,16 +2,26 @@
   <div class="terminal space shadow">
     <div class="top">
       <div class="btns">
-        <span class="circle red"></span>
+        <span class="info">Technologies Used 4, 245 commits</span>
+        <!-- <span class="circle red"></span>
         <span class="circle yellow"></span>
-        <span class="circle green"></span>
+        <span class="circle green"></span> -->
       </div>
       <div class="title">bash -- 70x32</div>
     </div>
-    <pre class="body">
-commands
-  </pre
-    >
+    <div class="value">
+      <pre>
+
+
+  /** 
+  * Project 2 
+  * lorem ipsom dolor sit amet 
+  * consectetur adipiscingelit 
+  * dolor sit amet 
+  */ 
+  see the project
+      </pre>
+    </div>
   </div>
 </template>
 
@@ -28,6 +38,12 @@ commands
     margin: 0;
     padding: 0;
   }
+
+  .info {
+    color: $secondary-color;
+    padding-left: 15px;
+  }
+
   .terminal {
     border-radius: 7px;
     position: relative;
@@ -52,10 +68,10 @@ commands
     border-width: 1px;
     border-style: solid;
   }
-  .title {
-    /* text-align: center; */
-    padding-left: 100px;
-  }
+  // .title {
+  // text-align: center;
+  // padding-left: 100px;
+  // }
   // .red {
   //   background: #ec6a5f;
   //   border-color: #d04e42;
@@ -68,15 +84,23 @@ commands
   //   background: #f5c04f;
   //   border-color: #d6a13d;
   // }
-  .clear {
-    clear: both;
-  }
-  .terminal .body {
+  // .clear {
+  //   clear: both;
+  // }
+  .terminal .value {
+    text-align: left;
     background: black;
-    // background: $background-ton-color;
     color: #7afb4c;
     padding: 8px;
     overflow: auto;
+    width: calc(100% - 30px); /* subtract 23px from width */
+    height: calc(100% - 50px); /* subtract 23px from height */
+    box-sizing: border-box; /* include padding and border in the height and width calculation */
+    position: absolute; /* position absolutely */
+    left: 15px; /* offset left by 23px */
+    top: 35px; /* offset top by 23px */
+    border-radius: 5px;
+    border: #05080d;
   }
   .space {
     margin: 25px;

@@ -1,10 +1,12 @@
 <template>
   <div class="project-page">
     <h1 class="title">{{ project.title }}</h1>
-    <h2 class="title">Technologies Used</h2>
-    <h3 class="title">4, 245 commits</h3>
-
-    <TerminalWindow class="terminal" />
+    <!-- <h2 class="title">Technologies Used</h2>
+    <h3 class="title">4, 245 commits</h3> -->
+    <div class="flex-center">
+      <TerminalWindow class="terminal" />
+      <TerminalWindow class="terminal" />
+    </div>
   </div>
 </template>
 
@@ -33,8 +35,14 @@
     /* display: flex; */
     justify-content: center;
   }
+
+  .flex-center {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
   .terminal {
-    height: 150px;
-    width: 300px;
+    height: 250px;
+    width: 400px;
   }
 </style>
