@@ -15,7 +15,8 @@
       </a>
     </div>
     <p class="time">
-      <i class="icons bi bi-bookmark-heart-fill"></i>{{ currentTime }}
+      <!-- <i class="icons bi bi-bookmark-heart-fill"></i> -->
+      {{ currentTime }}
     </p>
   </div>
 </template>
@@ -37,6 +38,11 @@
 </script>
 
 <style lang="scss">
+  $primary-color: #8b6e34;
+  $secondary-color: #6c757d;
+  $background-color: #0d1017;
+  $text-color: #f5f8ff;
+
   /* Change color on hover for font-awesome icons */
   .fa:hover {
     color: #ff0000;
@@ -45,7 +51,7 @@
 
   /* Change color on hover for Bootstrap icons */
   .bi:hover {
-    color: #ff0000;
+    color: $primary-color;
     cursor: pointer;
   }
 

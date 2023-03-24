@@ -40,16 +40,16 @@
 
 <style lang="css">
   .tab {
-    outline: 1px solid rgb(255, 255, 255);
+    /* font-family: monospace, Courier; */
+    font-size: 20px;
+
+    outline: 1px solid #828282;
     text-decoration: none;
-    padding: 20px;
+    padding: 10px 50px 10px 40px;
     color: #828282;
   }
   .active {
     color: rgb(255, 140, 0);
-  }
-  .b-nav .active {
-    background-color: #00d907;
-    color: #fff;
+    font-weight: bold;
   }
 </style>

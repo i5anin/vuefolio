@@ -1,0 +1,87 @@
+<template>
+  <div class="terminal space shadow">
+    <div class="top">
+      <div class="btns">
+        <span class="circle red"></span>
+        <span class="circle yellow"></span>
+        <span class="circle green"></span>
+      </div>
+      <div class="title">bash -- 70x32</div>
+    </div>
+    <pre class="body">
+commands
+  </pre
+    >
+  </div>
+</template>
+
+<script></script>
+
+<style lang="scss">
+  $primary-color: #8b6e34;
+  $secondary-color: #6c757d;
+  $background-color: #0d1017;
+  $background-ton-color: #0a0d12;
+  $text-color: #f5f8ff;
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .terminal {
+    border-radius: 7px;
+    position: relative;
+  }
+  .terminal .top {
+    background: $background-color;
+    color: $background-ton-color;
+    padding: 5px;
+    border-radius: 5px 5px 0 0;
+  }
+  .terminal .btns {
+    position: absolute;
+    top: 7px;
+    left: 5px;
+  }
+  .terminal .circle {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-radius: 15px;
+    margin-left: 2px;
+    border-width: 1px;
+    border-style: solid;
+  }
+  .title {
+    /* text-align: center; */
+    padding-left: 100px;
+  }
+  // .red {
+  //   background: #ec6a5f;
+  //   border-color: #d04e42;
+  // }
+  // .green {
+  //   background: #64cc57;
+  //   border-color: #4ea73b;
+  // }
+  // .yellow {
+  //   background: #f5c04f;
+  //   border-color: #d6a13d;
+  // }
+  .clear {
+    clear: both;
+  }
+  .terminal .body {
+    background: black;
+    // background: $background-ton-color;
+    color: #7afb4c;
+    padding: 8px;
+    overflow: auto;
+  }
+  .space {
+    margin: 25px;
+  }
+  .shadow {
+    box-shadow: 0px 0px 10px rgba(0, 212, 231, 0.4);
+  }
+</style>

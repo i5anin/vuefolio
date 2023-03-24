@@ -11,7 +11,7 @@
 </template>
 
 <script>
-  import { BTabs, BTab } from 'bootstrap-vue';
+  // import { BTabs, BTab } from 'bootstrap-vue';
   import TabNav from '@/vue/components/TabNav.vue';
   import FooterPage from '@/vue/components/FooterPage.vue';
 
@@ -19,32 +19,26 @@
     components: {
       TabNav,
       FooterPage,
-      BTabs,
-      BTab,
+      // BTabs,
+      // BTab,
     },
   };
 </script>
 
 <style lang="scss">
-  $primary-color: #007bff;
+  $primary-color: #8b6e34;
   $secondary-color: #6c757d;
   $background-color: #0d1017;
-  $text-color: #ffffff;
-
+  $text-color: #f5f8ff;
   #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-family: monospace, Courier;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    margin-top: 60px;
+    margin-top: 28px;
   }
 
   .dark-theme {
     background-color: $background-color;
     color: $text-color;
-  }
-
-  .title {
-    padding: 40px 0 0 0;
   }
 </style>

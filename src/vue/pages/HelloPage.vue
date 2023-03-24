@@ -3,7 +3,7 @@
     <div>
       <p class="title">Hello! I am</p>
       <h1 class="title">Sergey Isanin</h1>
-      <h2>Junior front-end developer</h2>
+      <h2 class="crossed-out">Junior front-end developer</h2>
       <h2>I want to be a middle front-end developer</h2>
 
       <p class="color-blue">// write the code below to continue</p>
@@ -37,5 +37,9 @@
 
   .underline {
     text-decoration: underline;
+  }
+
+  .crossed-out {
+    text-decoration: line-through;
   }
 </style>
