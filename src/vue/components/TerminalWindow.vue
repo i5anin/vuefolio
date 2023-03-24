@@ -34,6 +34,7 @@
   }
 
   .pre-content {
+    font-family: Courier, monospace;
     font-size: 18px;
   }
 
