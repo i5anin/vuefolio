@@ -3,9 +3,6 @@
     <div class="top">
       <div class="btns">
         <span class="info">Technologies Used 4, 245 commits</span>
-        <!-- <span class="circle red"></span>
-        <span class="circle yellow"></span>
-        <span class="circle green"></span> -->
       </div>
       <div class="title">bash -- 70x32</div>
     </div>
@@ -68,25 +65,6 @@
     border-width: 1px;
     border-style: solid;
   }
-  // .title {
-  // text-align: center;
-  // padding-left: 100px;
-  // }
-  // .red {
-  //   background: #ec6a5f;
-  //   border-color: #d04e42;
-  // }
-  // .green {
-  //   background: #64cc57;
-  //   border-color: #4ea73b;
-  // }
-  // .yellow {
-  //   background: #f5c04f;
-  //   border-color: #d6a13d;
-  // }
-  // .clear {
-  //   clear: both;
-  // }
   .terminal .value {
     text-align: left;
     background: black;

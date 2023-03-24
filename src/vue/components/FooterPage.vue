@@ -2,8 +2,6 @@
   <div class="footer">
     <div>
       <a class="find-me">find me in:</a>
-      <!-- <i class="icons bi bi-house-fill"></i> -->
-      <!-- <i class="icons bi bi-envelope-fill"></i> -->
       <a href="https://github.com/i5anin">
         <i class="icons bi bi-github"></i>
       </a>
@@ -15,7 +13,6 @@
       </a>
     </div>
     <p class="time">
-      <!-- <i class="icons bi bi-bookmark-heart-fill"></i> -->
       {{ currentTime }}
     </p>
   </div>
@@ -39,19 +36,14 @@
 
 <style lang="scss">
   $primary-color: #8b6e34;
+  $primary-color-2: #ff8c00;
   $secondary-color: #6c757d;
   $background-color: #0d1017;
   $text-color: #f5f8ff;
 
-  /* Change color on hover for font-awesome icons */
-  .fa:hover {
-    color: #ff0000;
-    cursor: pointer;
-  }
-
-  /* Change color on hover for Bootstrap icons */
+  /* Изменение цвета при наведении для иконок Bootstrap */
   .bi:hover {
-    color: $primary-color;
+    color: $primary-color-2;
     cursor: pointer;
   }
 
@@ -95,9 +87,8 @@
 
   .footer .divider {
     height: 100%;
-    // border-left: 1px solid #e7e7e7; /* added to create a vertical line */
-    margin-left: 15px; /* added to create an indent */
-    margin-right: 15px; /* added to create a gap between the line and the icons */
-    flex-shrink: 0; /* added to prevent the element from shrinking */
+    margin-left: 15px;
+    margin-right: 15px;
+    flex-shrink: 0;
   }
 </style>
