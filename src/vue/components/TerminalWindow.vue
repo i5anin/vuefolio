@@ -2,27 +2,24 @@
   <div class="terminal space shadow">
     <div class="top">
       <div class="btns">
-        <span class="info">Technologies Used 4, 245 commits</span>
+        <span class="header">{{ headerContent }}</span>
       </div>
-      <div class="title">bash -- 70x32</div>
     </div>
     <div class="value">
-      <pre>
-
-
-  /** 
-  * Project 2 
-  * lorem ipsom dolor sit amet 
-  * consectetur adipiscingelit 
-  * dolor sit amet 
-  */ 
-  see the project
-      </pre>
+      <pre>{{ preContent }}</pre>
     </div>
   </div>
 </template>
 
-<script></script>
+<script>
+  export default {
+    name: 'TerminalWindow',
+    props: {
+      headerContent: String,
+      preContent: String,
+    },
+  };
+</script>
 
 <style lang="scss">
   $primary-color: #8b6e34;
@@ -36,7 +33,7 @@
     padding: 0;
   }
 
-  .info {
+  .header {
     color: $secondary-color;
     padding-left: 15px;
   }

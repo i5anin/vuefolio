@@ -2,8 +2,28 @@
   <div class="project-page">
     <h1 class="title">{{ project.title }}</h1>
     <div class="flex-center">
-      <TerminalWindow class="terminal-size" />
-      <TerminalWindow class="terminal-size" />
+      <TerminalWindow
+        pre-content="
+        /** 
+        * Project 1 
+        * lorem ipsom dolor sit amet 
+        * consectetur adipiscingelit 
+        * dolor sit amet 
+        */ 
+        see the project"
+        header-content="Technologies Used 4, 245 commits"
+        class="terminal-size" />
+      <TerminalWindow
+        pre-content="
+        /** 
+        * Project 2 
+        * lorem ipsom dolor sit amet 
+        * consectetur adipiscingelit 
+        * dolor sit amet 
+        */ 
+        see the project"
+        header-content="Technologies Used 4, 245 commits"
+        class="terminal-size" />
     </div>
   </div>
 </template>

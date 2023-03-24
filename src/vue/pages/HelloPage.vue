@@ -10,7 +10,17 @@
       <p class="color-pink">> <span class="underline">w</span>hois</p>
     </div>
     <div>
-      <TerminalWindow class="terminal-size" />
+      <TerminalWindow
+        pre-content="
+        /** 
+        * Project 0 
+        * lorem ipsom dolor sit amet 
+        * consectetur adipiscingelit 
+        * dolor sit amet 
+        */ 
+        see the project"
+        header-content="Technologies Used 4, 245 commits"
+        class="terminal-size" />
       <!-- <img src="@/assets/test.jpg" /> -->
     </div>
   </div>
