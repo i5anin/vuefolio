@@ -1,4 +1,23 @@
-//
+/* Change color on hover for font-awesome icons */
+.fa:hover {
+  color: #ff0000;
+  cursor: pointer;
+}
+
+/* Change color on hover for Bootstrap icons */
+.bi:hover {
+  color: #ff0000;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
 
 .icons {
   padding: 5px 10px;

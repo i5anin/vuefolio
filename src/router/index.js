@@ -1,13 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import HomePage from '@/vue/pages/HomePage.vue';
+import HelloPage from '@/vue/pages/HelloPage.vue';
 import AboutPage from '@/vue/pages/AboutPage.vue';
-// import TabTest from '@/pages/TabTest.vue';
-import ErrorPage from '@/vue/pages/ErrorPage.vue';
+import ProjectPage from '@/vue/pages/ProjectPage.vue';
+// Error404
+import ErrorPage from '@/vue/pages/error/ErrorPage.vue';
 
 const routes = [
-  { path: '/', name: 'Home', component: HomePage },
+  { path: '/', name: 'Hello', component: HelloPage },
   { path: '/about', name: 'About', component: AboutPage },
-  // { path: '/test', name: 'Test', component: TabTest },
+  { path: '/projects', name: 'Projects', component: ProjectPage },
+  // Error404
   { path: '/:pathMatch(.*)', name: 'Error404', component: ErrorPage },
 ];
 
