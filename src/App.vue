@@ -11,6 +11,7 @@
 </template>
 
 <script>
+  import { BTabs, BTab } from 'bootstrap-vue';
   import TabNav from '@/vue/components/TabNav.vue';
   import FooterPage from '@/vue/components/FooterPage.vue';
 
@@ -18,6 +19,8 @@
     components: {
       TabNav,
       FooterPage,
+      BTabs,
+      BTab,
     },
   };
 </script>
@@ -39,13 +42,6 @@
   .dark-theme {
     background-color: $background-color;
     color: $text-color;
-  }
-
-  .tab {
-    outline: 1px solid rgb(255, 255, 255);
-    text-decoration: none;
-    padding: 20px;
-    color: #828282;
   }
 
   .title {
