@@ -42,9 +42,7 @@
   .active {
     color: rgb(255, 140, 0);
   }
-</style>
 
-<style>
   .b-nav .active {
     background-color: #0074d9;
     color: #fff;

@@ -20,3 +20,22 @@
     name: 'HelloPage',
   };
 </script>
+
+<style scoped>
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .color-pink {
+    color: pink;
+  }
+
+  .color-blue {
+    color: rgb(161, 255, 242);
+  }
+
+  .underline {
+    text-decoration: underline;
+  }
+</style>
