@@ -39,12 +39,17 @@
 </script>
 
 <style lang="css">
+  .tab {
+    outline: 1px solid rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 20px;
+    color: #828282;
+  }
   .active {
     color: rgb(255, 140, 0);
   }
-
   .b-nav .active {
-    background-color: #0074d9;
+    background-color: #00d907;
     color: #fff;
   }
 </style>
