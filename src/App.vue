@@ -1,17 +1,6 @@
 <template>
   <div>
-    <b-tabs v-model="activeTab">
-      <router-link
-        class="tab"
-        v-for="(tab, index) in tabs"
-        :key="index"
-        :to="tabRoutes[index]"
-        :title="tab">
-        <b-tab :class="{ active: activeTab === index }">
-          {{ tab }}
-        </b-tab>
-      </router-link>
-    </b-tabs>
+    <tab-nav />
     <router-view v-slot="{ Component }">
       <transition name="fade" mode="out-in">
         <component :is="Component" />
@@ -22,57 +11,17 @@
 </template>
 
 <script>
+  import TabNav from '@/vue/components/TabNav.vue';
   import FooterPage from '@/vue/components/FooterPage.vue';
 
   export default {
     components: {
+      TabNav,
       FooterPage,
-    },
-    data() {
-      return {
-        tabs: ['_hello', '_about me', '_projects'],
-        tabRoutes: ['/', '/about', '/projects'],
-        activeTab: 0,
-      };
-    },
-    mounted() {
-      const currentRoute = this.$router.currentRoute.path;
-      this.activeTab = this.tabRoutes.indexOf(currentRoute);
-    },
-    watch: {
-      $route(to) {
-        const index = this.tabRoutes.indexOf(to.path);
-        if (index >= 0) {
-          this.activeTab = index;
-        }
-      },
     },
   };
 </script>
 
-<style lang="css">
-  .active {
-    color: rgb(255, 140, 0);
-  }
-
-  .fade-enter-active,
-  .fade-leave-active {
-    transition: opacity 0.5s;
-  }
-
-  .fade-enter,
-  .fade-leave-to {
-    opacity: 0;
-  }
-</style>
-
 <style lang="scss">
   @import 'assets/main';
-</style>
-
-<style>
-  .b-nav .active {
-    background-color: #0074d9;
-    color: #fff;
-  }
 </style>
