@@ -1,5 +1,5 @@
 <template>
-  <div class="flex">
+  <div class="flex-center">
     <div>
       <p class="title">Hello! I am</p>
       <h1 class="title">Sergey Isanin</h1>
@@ -12,14 +12,12 @@
     <div>
       <TerminalWindow
         pre-content="
-        /** 
-        * Project 0 
-        * lorem ipsom dolor sit amet 
-        * consectetur adipiscingelit 
-        * dolor sit amet 
-        */ 
-        see the project"
-        header-content="Technologies Used 4, 245 commits"
+/** 
+* Project 0 
+* Vue - fan
+*/ 
+see the project"
+        header-content="Technologies Used 4, 1245 commits"
         class="terminal-size" />
       <!-- <img src="@/assets/test.jpg" /> -->
     </div>
@@ -39,14 +37,17 @@
 
 <style scoped>
   .terminal-size {
-    height: 350px;
-    width: 500px;
+    height: 250px;
+    width: 450px;
   }
-  .flex {
+  .flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* height: 100%;
+    width: 100%; */
   }
+
   .color-pink {
     color: pink;
   }

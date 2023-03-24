@@ -2,11 +2,11 @@
   <div class="terminal space shadow">
     <div class="top">
       <div class="btns">
-        <span class="header">{{ headerContent }}</span>
+        <span class="header-content">{{ headerContent }}</span>
       </div>
     </div>
     <div class="value">
-      <pre>{{ preContent }}</pre>
+      <pre class="pre-content">{{ preContent }}</pre>
     </div>
   </div>
 </template>
@@ -33,7 +33,12 @@
     padding: 0;
   }
 
-  .header {
+  .pre-content {
+    font-size: 18px;
+  }
+
+  .header-content {
+    font-size: 18px;
     color: $secondary-color;
     padding-left: 15px;
   }

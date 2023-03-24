@@ -10,6 +10,7 @@
         {{ tab }}
       </b-tab>
     </router-link>
+    <nav class="tab-nav-container"></nav>
   </b-tabs>
 </template>
 
@@ -40,9 +41,7 @@
 
 <style lang="css">
   .tab {
-    /* font-family: monospace, Courier; */
     font-size: 20px;
-
     outline: 1px solid #828282;
     text-decoration: none;
     padding: 10px 50px 10px 40px;
@@ -51,5 +50,19 @@
   .active {
     color: rgb(255, 140, 0);
     font-weight: bold;
+  }
+  .tab-nav-container {
+    padding: 6px;
+    position: relative;
+  }
+
+  .tab-nav-container::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #828282;
   }
 </style>
