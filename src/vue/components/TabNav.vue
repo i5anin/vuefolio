@@ -44,7 +44,7 @@
     font-size: 20px;
     outline: 1px solid #828282;
     text-decoration: none;
-    padding: 10px 50px 10px 40px;
+    padding: 10px 80px 10px 70px;
     color: #828282;
   }
   .active {

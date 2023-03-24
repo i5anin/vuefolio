@@ -71,7 +71,8 @@
   .terminal .value {
     text-align: left;
     background: black;
-    color: #7afb4c;
+    color: rgb(157, 157, 157);
+    font-weight: bold;
     padding: 8px;
     overflow: auto;
     width: calc(100% - 30px); /* subtract 23px from width */

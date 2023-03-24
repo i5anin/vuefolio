@@ -2,10 +2,10 @@
   <div class="hello-page-container">
     <div class="flex-center">
       <div>
-        <p class="title">Hello! I am</p>
-        <h1 class="title">Sergey Isanin</h1>
-        <h2 class="crossed-out">Junior front-end developer</h2>
-        <h2>I want to be a middle front-end developer</h2>
+        <p class="hello">Hello! I am</p>
+        <h1 class="fio">Sergey Isanin</h1>
+        <h2>Junior front-end developer</h2>
+        <h2 class="dev">I want to be a middle front-end developer</h2>
 
         <p class="color-blue">// write the code below to continue</p>
         <p class="color-pink">> <span class="underline">w</span>hois</p>
@@ -43,12 +43,25 @@ see the project"
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
   }
   .terminal-size {
     height: 250px;
     width: 450px;
   }
+  .hello {
+    font-size: 20px;
+    padding-bottom: 30px;
+  }
+  .fio {
+    font-size: 80px;
+    padding-right: 200px;
+    padding-bottom: 50px;
+  }
+  .dev {
+    padding-bottom: 220px;
+  }
+
   .flex-center {
     display: flex;
     justify-content: center;
@@ -57,12 +70,14 @@ see the project"
     width: 100%; */
   }
 
-  .color-pink {
-    color: pink;
-  }
-
   .color-blue {
     color: rgb(161, 255, 242);
+    font-size: 20px;
+  }
+
+  .color-pink {
+    color: pink;
+    font-size: 40px;
   }
 
   .underline {
