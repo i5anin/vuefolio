@@ -53,16 +53,16 @@ see the project"
   }
   .hello {
     font-size: 20px;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
   }
   .fio {
     font-size: 80px;
-    padding-right: 200px;
-    padding-bottom: 50px;
+    /* padding-right: 200px; */
+    /* padding-bottom: 50px; */
   }
-  .dev {
-    padding-bottom: 220px;
-  }
+  /* .dev { */
+  /*  padding-bottom: 220px; */
+  /* } */
 
   .flex-center {
     display: flex;
