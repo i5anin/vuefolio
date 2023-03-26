@@ -13,7 +13,7 @@
   };
 </script>
 
-<style scoped>
+<style lang="css">
   .flex-center {
     text-align: center;
     display: flex;

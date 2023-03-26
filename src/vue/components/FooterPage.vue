@@ -6,11 +6,9 @@
         <i class="icons bi bi-github"></i>
       </a>
       <a href="https://www.youtube.com/c/SergeyIsanin">
-        <i class="icons bi bi-youtube"></i>
+        <font-awesome-icon :icon="['fab', 'vk']" />
       </a>
-      <a href="https://vk.com/i5anin"
-        ><i class="icons bi bi-bootstrap-fill"></i>
-      </a>
+      <a href="https://vk.com/i5anin"><font-awesome-icon :icon="myIcon" /></a>
     </div>
     <p class="time">
       {{ currentTime }}
@@ -19,10 +17,17 @@
 </template>
 
 <script>
+  import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+  import { faCoffee } from '@fortawesome/free-solid-svg-icons';
   export default {
+    components: {
+      FontAwesomeIcon,
+    },
     data() {
       return {
         currentTime: '',
+        myIcon: faCoffee,
+        vk: "[' fab', 'vk']",
       };
     },
     created() {
