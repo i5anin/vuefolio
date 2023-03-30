@@ -1,6 +1,7 @@
 <template>
   <div>
-    <tab-nav />
+    <!-- <tab-nav /> -->
+    <tab-test />
     <router-view v-slot="{ Component }">
       <transition name="fade" mode="out-in">
         <component class="test-bg" :is="Component" />
@@ -13,11 +14,13 @@
 <script>
   // import { BTabs, BTab } from 'bootstrap-vue';
   import TabNav from '@/vue/components/TabNav.vue';
+  import TabTest from '@/vue/components/TabTest.vue';
   import FooterPage from '@/vue/components/FooterPage.vue';
 
   export default {
     components: {
       TabNav,
+      TabTest,
       FooterPage,
       // BTabs,
       // BTab,
