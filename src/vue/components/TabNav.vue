@@ -1,31 +1,47 @@
 <template>
-  <div>
-    <TabNav :tabs="tabs" @tab-selected="onTabSelected" />
-    <!-- остальной код -->
-  </div>
+  <v-tabs
+    v-model="activeTab"
+    background-color="transparent"
+    slider-color="#333"
+    height="100%"
+    width="100%"
+    v-if="localTabs.length > 0">
+    <v-tab
+      v-for="(tab, index) in localTabs"
+      :key="index"
+      :class="activeTab === tab.id ? 'primary' : ''"
+      @click="selectTab(tab)">
+      {{ tab.label }}
+    </v-tab>
+  </v-tabs>
 </template>
 
 <script>
-  import TabNav from './components/TabNav.vue';
-
   export default {
-    name: 'App',
-    components: {
-      TabNav,
+    name: 'TabNav',
+    props: {
+      tabs: {
+        type: Array,
+        default: () => [],
+      },
     },
     data() {
       return {
-        tabs: [
-          { id: 'home', label: 'Home' },
-          { id: 'about', label: 'About' },
-          { id: 'contact', label: 'Contact' },
-        ],
-        activeTab: 'home',
+        activeTab: '',
       };
     },
+    computed: {
+      localTabs() {
+        if (this.tabs.length === 0) {
+          return [];
+        }
+        return this.tabs.slice();
+      },
+    },
     methods: {
-      onTabSelected(tabId) {
-        this.activeTab = tabId;
+      selectTab(tab) {
+        this.activeTab = tab.id;
+        this.$emit('tab-selected', tab.id);
       },
     },
   };
