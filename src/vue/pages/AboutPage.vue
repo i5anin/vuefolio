@@ -2,20 +2,11 @@
   <div class="about-us">
     <v-container>
       <div class="container">
-        <h1 class="title">О нас</h1>
-        <div class="subtitle">
-          <p>
-            Мы занимаемся созданием качественных и современных веб-приложений.
-          </p>
-          <p>
-            В нашей команде вы найдете высококвалифицированных специалистов по
-            разработке программного обеспечения, дизайнеров и маркетологов.
-          </p>
-        </div>
-        <h2 class="subtitle">Технологии</h2>
+        <h1 class="subtitle display-1 mb-4">Технологии</h1>
         <div class="content">
           <div class="columns">
             <div class="column" v-for="tech in techStack" :key="tech.name">
+              тест
               <div class="card">
                 <div class="card-content">
                   <div class="media">
@@ -38,7 +29,6 @@
 
       <v-row>
         <v-col cols="12" md="6">
-          <h1 class="display-1 mb-4">About Us</h1>
           <p class="subtitle-1 mb-6">Я веб разработчик</p>
           <img
             src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif"
@@ -54,7 +44,7 @@
           </a>
         </v-col>
         <v-col cols="12" md="6">
-          <v-img src="@/assets/About-Us.jpg" height="100%" contain></v-img>
+          <v-Img src="@/assets/About-Us.jpg" height="100%" contain></v-Img>
         </v-col>
       </v-row>
     </v-container>
@@ -63,7 +53,7 @@
 
 <script>
   import techStackData from '@/data/tech-stack.json';
-  import { VRow, VCol, VImg, VContainer } from 'vuetify';
+  import { VRow, VCol, VImg, VContainer } from 'vuetify/lib/components';
 
   export default {
     components: { VRow, VCol, VImg, VContainer },
