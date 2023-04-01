@@ -1,5 +1,5 @@
 {
-  "techStack": {
+  "frontend": {
     "languages": [
       {
         "name": "JavaScript",
@@ -44,6 +44,32 @@
         "name": "ESLint",
         "documentation": "https://eslint.org/docs/user-guide/getting-started",
         "image": "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_eslint_icon_130282.png"
+      }
+    ]
+  },
+  "backend": {
+    "languages": [
+      {
+        "name": "JavaScript",
+        "documentation": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        "image": "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_js_icon_130509.png"
+      },
+      {
+        "name": "Node.js",
+        "documentation": "https://nodejs.org/en/docs/",
+        "image": "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_node_icon_130301.png"
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "Express.js",
+        "documentation": "https://expressjs.com/en/starter/installing.html",
+        "image": "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_express_icon_130509.png"
+      },
+      {
+        "name": "Koa.js",
+        "documentation": "https://koajs.com/#installation",
+        "image": "https://cdn.icon-icons.com/icons2/2415/PNG/512/koa"
       }
     ]
   }

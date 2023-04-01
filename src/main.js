@@ -1,3 +1,4 @@
+// Icons
 import '@mdi/font/css/materialdesignicons.css'
 
 // Components
