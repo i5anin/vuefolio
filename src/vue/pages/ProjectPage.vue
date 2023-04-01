@@ -1,31 +1,33 @@
 <template>
   <div class="project-page-container">
-    <h1 class="title">{{ project.title }}</h1>
-    <div class="flex-center">
-      <TerminalWindow
-        pre-content="
-/** 
-* Project 1 
+    <v-container>
+      <h1 class="title">{{ project.title }}</h1>
+      <div class="flex-center">
+        <TerminalWindow
+          pre-content="
+/**
+* Project 1
 * transmitted via props?
-*/ 
+*/
 see the project"
-        header-content="Technologies Used 2, 155 commits"
-        class="terminal-size" />
-      <TerminalWindow
-        pre-content="
-/** 
-* Project 2 
+          header-content="Technologies Used 2, 155 commits"
+          class="terminal-size" />
+        <TerminalWindow
+          pre-content="
+/**
+* Project 2
 * transmitted via props!
-*/ 
+*/
 see the project"
-        header-content="Technologies Used 7, 345 commits"
-        class="terminal-size" />
-    </div>
+          header-content="Technologies Used 7, 345 commits"
+          class="terminal-size" />
+      </div>
+    </v-container>
   </div>
 </template>
 
 <script>
-  import TerminalWindow from '@/vue/components/TerminalWindow.vue';
+  import TerminalWindow from '@/vue/components/TerminalWindow.vue'
 
   export default {
     components: {
@@ -36,11 +38,11 @@ see the project"
       project: {
         type: Object,
         default: () => {
-          return { title: '// Top projects' };
+          return { title: '// Top projects' }
         },
       },
     },
-  };
+  }
 </script>
 
 <style scoped>
@@ -49,9 +51,13 @@ see the project"
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 95vh;
   }
 
+  .title {
+    display: flex;
+    justify-content: center;
+  }
   .flex-center {
     display: flex;
     justify-content: center;

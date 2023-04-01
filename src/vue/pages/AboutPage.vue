@@ -48,12 +48,9 @@
 </template>
 
 <script>
-  // import techStackData from '@/data/tech-stack.json';
-  import techStackData from '../../data/tech-stack.json'
-  // import { VRow, VCol, VImg, VContainer } from 'vuetify/lib/components';
+  import techStackData from '@/data/tech-stack.json'
 
   export default {
-    // components: { VRow, VCol, VImg, VContainer },
     name: 'AboutUs',
     data() {
       return { techStack: techStackData }
@@ -63,6 +60,7 @@
 
 <style>
   .about-us {
+    height: 95vh;
     padding: 80px 0;
   }
 </style>
