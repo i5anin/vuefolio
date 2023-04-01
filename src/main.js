@@ -1,11 +1,11 @@
-import 'bootstrap-icons/font/bootstrap-icons.css';
-import { createApp } from 'vue';
-import App from './App.vue';
-// import store from './store'
-import router from './router';
+// Components
+import App from './App.vue'
 
-const app = createApp(App);
-// app.use(store)
-app.use(router);
+// Composables
+import { createApp } from 'vue'
 
-app.mount('#app');
+// Plugins
+import { registerPlugins } from '@/plugins'
+const app = createApp(App)
+registerPlugins(app)
+app.mount('#app')

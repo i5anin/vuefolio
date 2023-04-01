@@ -1,42 +1,44 @@
 <template>
   <div class="hello-page-container">
-    <div class="flex-center">
-      <div>
-        <p class="hello">Hello! I am</p>
-        <h1 class="fio">Sergey Isanin</h1>
-        <h2 class="crossed-out">Junior front-end developer</h2>
-        <h2 class="dev color-blue">
-          I want to be a middle front-end developer
-        </h2>
+    <v-container>
+      <div class="flex-center">
+        <div>
+          <p class="hello">Hello! I am</p>
+          <h1 class="fio">Sergey Isanin</h1>
+          <h2 class="crossed-out">Junior front-end developer</h2>
+          <h2 class="dev color-blue">
+            I want to be a middle front-end developer
+          </h2>
 
-        <p class="font-size20">// write the code below to continue</p>
-        <p class="color-pink">> <span class="underline">w</span>hois</p>
-      </div>
-      <div>
-        <TerminalWindow
-          pre-content="
-/** 
-* Project 0 
+          <p class="font-size20">// write the code below to continue</p>
+          <p class="color-pink">> <span class="underline">w</span>hois</p>
+        </div>
+        <div>
+          <TerminalWindow
+            pre-content="
+/**
+* Project 0
 * Vue - fan
-*/ 
+*/
 see the project"
-          header-content="Technologies Used 4, 1245 commits"
-          class="terminal-size" />
-        <!-- <img src="@/assets/test.jpg" /> -->
+            header-content="Technologies Used 4, 1245 commits"
+            class="terminal-size" />
+          <!-- <img src="@/assets/test.jpg" /> -->
+        </div>
       </div>
-    </div>
+    </v-container>
   </div>
 </template>
 
 <script>
-  import TerminalWindow from '@/vue/components/TerminalWindow.vue';
+  import TerminalWindow from '@/vue/components/TerminalWindow.vue'
 
   export default {
     components: {
       TerminalWindow,
     },
     name: 'HelloPage',
-  };
+  }
 </script>
 
 <style scoped>
@@ -45,7 +47,7 @@ see the project"
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 95vh;
   }
   .terminal-size {
     height: 250px;
