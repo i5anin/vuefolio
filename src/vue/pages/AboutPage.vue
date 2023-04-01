@@ -3,13 +3,13 @@
     <v-container>
       <div class="container">
         <h1 class="subtitle display-1 mb-4">Технологии</h1>
-        <div class="column" v-for="tech in techStack" :key="tech.name">
-          тест
+        <div class="column" v-for="tech in frameworks" :key="tech.name">
           <div class="card">
             <div class="card-content">
               <div class="media">
                 <div class="media-content">
                   <p class="title is-4">{{ tech.name }}</p>
+                  <img :src="tech.img" width="100" />
                 </div>
               </div>
               <div class="content">
@@ -53,7 +53,14 @@
   export default {
     name: 'AboutUs',
     data() {
-      return { techStack: techStackData }
+      console.log(techStackData)
+
+      // console.log(techStackData.techStack) // "React"
+      console.log(techStackData.techStack.frameworks) // "React"
+      return {
+        techStack: techStackData,
+        frameworks: techStackData.techStack.frameworks,
+      }
     },
   }
 </script>
