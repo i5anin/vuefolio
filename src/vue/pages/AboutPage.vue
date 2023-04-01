@@ -8,8 +8,8 @@
             <div class="card-content">
               <div class="media">
                 <div class="media-content">
-                  <p class="title is-4">{{ tech.name }}</p>
                   <img :src="tech.img" width="100" />
+                  <p class="title is-4">{{ tech.name }}</p>
                 </div>
               </div>
               <div class="content">
