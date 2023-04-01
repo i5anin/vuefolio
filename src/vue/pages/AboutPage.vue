@@ -4,21 +4,19 @@
       <v-row>
         <v-col cols="12" md="6">
           <h1 class="display-1 mb-4">About Us</h1>
-          <p class="subtitle-1 mb-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in
-            nisl orci. Aliquam vitae neque libero. Vestibulum vel elit vitae
-            dolor molestie venenatis.
-          </p>
-          <p class="subtitle-1 mb-6">
-            Etiam non nisl ut est placerat egestas. Cras vel pharetra leo. Duis
-            varius magna ut eros lobortis, sed maximus eros tristique.
-            Vestibulum et massa sit amet dolor dignissim auctor quis in velit.
-          </p>
-          <p class="subtitle-1 mb-6">
-            Aenean vel elit arcu. Vestibulum ultricies iaculis sapien, eget
-            commodo odio molestie vitae.
-          </p>
-          <v-btn color="primary" large class="mt-10">Learn More</v-btn>
+          <p class="subtitle-1 mb-6">Я веб разработчик</p>
+          <img
+            src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif"
+            width="70px" />. Мой путь в it начался ещё со школы и института,
+          немного поработал в it сфере, укрепил свои знания курсами по Vue.js от
+          Skillbox, где я проходил 7-месяцев курсы.
+
+          <p class="subtitle-1 mb-6">Начал решать задачки тут:</p>
+          <a href="https://leetcode.com/i5anin/">
+            <img
+              src="https://leetcode-stats-six.vercel.app/api?username=i5anin&show_icons=true&hide_border=true&theme=dark"
+              alt="KnlnKS's LeetCodestats" />
+          </a>
         </v-col>
         <v-col cols="12" md="6">
           <v-img src="@/assets/About-Us.jpg" height="100%" contain></v-img>
