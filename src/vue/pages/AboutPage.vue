@@ -63,10 +63,10 @@
 
 <script>
   import techStackData from '@/data/tech-stack.json';
-  import { VRow, VCol } from 'vuetify';
+  import { VRow, VCol, VImg, VContainer } from 'vuetify';
 
   export default {
-    components: { VRow, VCol },
+    components: { VRow, VCol, VImg, VContainer },
     name: 'AboutUs',
     data() {
       return { techStack: techStackData };
