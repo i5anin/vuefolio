@@ -66,15 +66,10 @@
   import { VRow, VCol } from 'vuetify';
 
   export default {
-    components: {
-      VRow,
-      VCol,
-    },
+    components: { VRow, VCol },
     name: 'AboutUs',
     data() {
-      return {
-        techStack: techStackData,
-      };
+      return { techStack: techStackData };
     },
   };
 </script>
