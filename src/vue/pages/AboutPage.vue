@@ -3,24 +3,20 @@
     <v-container>
       <div class="container">
         <h1 class="subtitle display-1 mb-4">Технологии</h1>
-        <div class="content">
-          <div class="columns">
-            <div class="column" v-for="tech in techStack" :key="tech.name">
-              тест
-              <div class="card">
-                <div class="card-content">
-                  <div class="media">
-                    <div class="media-content">
-                      <p class="title is-4">{{ tech.name }}</p>
-                    </div>
-                  </div>
-                  <div class="content">
-                    <p>{{ tech.description }}</p>
-                    <p>
-                      <a :href="tech.link">{{ tech.link }}</a>
-                    </p>
-                  </div>
+        <div class="column" v-for="tech in techStack" :key="tech.name">
+          тест
+          <div class="card">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">{{ tech.name }}</p>
                 </div>
+              </div>
+              <div class="content">
+                <p>{{ tech.description }}</p>
+                <p>
+                  <a :href="tech.link">{{ tech.link }}</a>
+                </p>
               </div>
             </div>
           </div>
@@ -44,7 +40,7 @@
           </a>
         </v-col>
         <v-col cols="12" md="6">
-          <v-Img src="@/assets/About-Us.jpg" height="100%" contain></v-Img>
+          <v-img src="@/assets/About-Us.jpg" height="100%" contain></v-img>
         </v-col>
       </v-row>
     </v-container>
@@ -52,7 +48,8 @@
 </template>
 
 <script>
-  import techStackData from '@/data/tech-stack.json';
+  // import techStackData from '@/data/tech-stack.json';
+  import techStackData from '../../data/tech-stack.json';
   import { VRow, VCol, VImg, VContainer } from 'vuetify/lib/components';
 
   export default {
