@@ -46,7 +46,7 @@
     font-family: monospace, Courier;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    margin-top: 28px;
+    // margin-top: 28px;
   }
 
   .dark-theme {
