@@ -1,12 +1,12 @@
 <template>
   <v-tabs v-model="activeTab" color="primary" centered>
     <v-tab
-      class="v-tab"
       v-for="(tab, index) in tabs"
       :key="index"
       :to="tabRoutes[index]"
       exact
-      active-class="v-tab--active">
+      active-class="active-tab"
+      class="tab">
       {{ tab }}
     </v-tab>
   </v-tabs>
@@ -14,7 +14,7 @@
 
 <script>
   export default {
-    name: 'TabNav',
+    name: 'TabTest',
     data() {
       return {
         tabs: ['_hello', '_about me', '_projects'],
@@ -38,22 +38,21 @@
 </script>
 
 <style scoped>
-  .v-tabs__slider {
-    background-color: rgb(255, 140, 0) !important;
-    height: 3px !important;
-  }
-  .v-tab {
+  .tab {
     font-size: 20px;
     text-decoration: none;
-    padding: 30px;
+    padding: 20px;
   }
-  .v-tab--active {
+  .active-tab {
     color: rgb(255, 140, 0);
+    font-weight: bold;
     border-top: 3px solid #ff0000;
     border-right: 1px solid #828282;
     border-left: 1px solid #828282;
     border-bottom: 0px solid #828282;
-    font-weight: bold;
-    padding: 10px 80px 10px 70px;
+  }
+  .v-tabs__slider {
+    background-color: rgb(255, 140, 0) !important;
+    height: 3px !important;
   }
 </style>
