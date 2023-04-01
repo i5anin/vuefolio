@@ -3,13 +3,13 @@
     <div>
       <a class="find-me">find me in:</a>
       <a class="icons" href="https://github.com/i5anin">
-        <!-- <font-awesome-icon :icon="['fab', 'vuejs']" style="font-size: 1.25em" /> -->
+        <font-awesome-icon :icon="['fab', 'vuejs']" style="font-size: 1.25em" />
       </a>
       <a class="icons" href="https://www.youtube.com/c/SergeyIsanin">
-        <!-- <font-awesome-icon :icon="['fab', 'vk']" style="font-size: 1.25em" /> -->
+        <font-awesome-icon :icon="['fab', 'vk']" style="font-size: 1.25em" />
       </a>
       <a class="icons" href="https://vk.com/i5anin">
-        <!-- <font-awesome-icon :icon="myIcon" style="font-size: 1.25em"/> -->
+        <font-awesome-icon :icon="myIcon" style="font-size: 1.25em" />
       </a>
     </div>
     <p class="time">
@@ -19,15 +19,15 @@
 </template>
 
 <script>
-  // import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+  import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
   import { library } from '@fortawesome/fontawesome-svg-core'
   import { fab } from '@fortawesome/free-brands-svg-icons'
   import { faCoffee } from '@fortawesome/free-solid-svg-icons'
   library.add(fab)
   export default {
-    // components: {
-    //   FontAwesomeIcon,
-    // },
+    components: {
+      FontAwesomeIcon,
+    },
     data() {
       return {
         currentTime: '',

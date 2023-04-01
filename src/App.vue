@@ -1,7 +1,7 @@
 <template>
   <div class="dark-theme">
-    <!-- <tab-nav /> -->
-    <tab-test />
+    <tab-nav />
+
     <router-view v-slot="{ Component }">
       <transition name="fade" mode="out-in">
         <component class="test-bg" :is="Component" />
@@ -12,18 +12,13 @@
 </template>
 
 <script>
-  // import { BTabs, BTab } from 'bootstrap-vue';
   import TabNav from '@/vue/components/TabNav.vue'
-  import TabTest from '@/vue/components/TabTest.vue'
   import FooterPage from '@/vue/components/FooterPage.vue'
 
   export default {
     components: {
       TabNav,
-      TabTest,
       FooterPage,
-      // BTabs,
-      // BTab,
     },
   }
 </script>
@@ -46,7 +41,6 @@
     font-family: monospace, Courier;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    // margin-top: 28px;
   }
 
   .dark-theme {

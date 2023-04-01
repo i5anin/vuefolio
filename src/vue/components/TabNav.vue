@@ -1,66 +1,59 @@
 <template>
-  <b-tabs v-model="activeTab">
-    <router-link
-      class="tab-container"
+  <v-tabs v-model="activeTab" color="primary" centered>
+    <v-tab
       v-for="(tab, index) in tabs"
       :key="index"
       :to="tabRoutes[index]"
-      :title="tab">
-      <b-tab
-        :class="{ active: activeTab === index, inactive: activeTab !== index }">
-        {{ tab }}
-      </b-tab>
-    </router-link>
-    <!-- <nav class="tab-nav-container"></nav> -->
-  </b-tabs>
+      exact
+      active-class="active-tab"
+      class="tab">
+      {{ tab }}
+    </v-tab>
+  </v-tabs>
 </template>
 
 <script>
   export default {
-    name: 'TabNav',
+    name: 'TabTest',
+    // components: { VTabs, VTab },
     data() {
       return {
         tabs: ['_hello', '_about me', '_projects'],
         tabRoutes: ['/', '/about', '/projects'],
         activeTab: 0,
-      };
+      }
     },
-    mounted() {
-      const currentRoute = this.$router.currentRoute.path;
-      this.activeTab = this.tabRoutes.indexOf(currentRoute);
+    created() {
+      const currentRoute = this.$route.path
+      this.activeTab = this.tabRoutes.indexOf(currentRoute)
     },
     watch: {
       $route(to) {
-        const index = this.tabRoutes.indexOf(to.path);
+        const index = this.tabRoutes.indexOf(to.path)
         if (index >= 0) {
-          this.activeTab = index;
+          this.activeTab = index
         }
       },
     },
-  };
+  }
 </script>
 
-<style lang="css">
-  .tab-container {
+<style scoped>
+  .tab {
     font-size: 20px;
     text-decoration: none;
+    padding: 20px;
   }
-  .active {
+  .active-tab {
     color: rgb(255, 140, 0);
+    font-weight: bold;
     border-top: 3px solid #ff0000;
     border-right: 1px solid #828282;
     border-left: 1px solid #828282;
     border-bottom: 0px solid #828282;
-    font-weight: bold;
-    padding: 10px 80px 10px 70px;
   }
-
-  .inactive {
-    border-top: 1px solid #828282;
-    border-right: 1px solid #828282;
-    border-left: 1px solid #828282;
-    border-bottom: 1px solid #828282;
-    font-weight: bold;
-    padding: 10px 80px 10px 70px;
+  .v-tabs__slider {
+    background-color: rgb(255, 140, 0) !important;
+    height: 3px !important;
   }
 </style>

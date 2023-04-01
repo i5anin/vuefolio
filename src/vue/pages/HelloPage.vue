@@ -9,7 +9,6 @@
           <h2 class="dev color-blue">
             I want to be a middle front-end developer
           </h2>
-
           <p class="font-size20">// write the code below to continue</p>
           <p class="color-pink">> <span class="underline">w</span>hois</p>
         </div>
@@ -23,7 +22,6 @@
 see the project"
             header-content="Technologies Used 4, 1245 commits"
             class="terminal-size" />
-          <!-- <img src="@/assets/test.jpg" /> -->
         </div>
       </div>
     </v-container>
@@ -55,23 +53,15 @@ see the project"
   }
   .hello {
     font-size: 20px;
-    /* padding-bottom: 30px; */
   }
   .fio {
     font-size: 80px;
-    /* padding-right: 200px; */
-    /* padding-bottom: 50px; */
   }
-  /* .dev { */
-  /*  padding-bottom: 220px; */
-  /* } */
 
   .flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 100%;
-    width: 100%; */
   }
 
   .color-blue {
