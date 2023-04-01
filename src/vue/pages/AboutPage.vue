@@ -49,16 +49,16 @@
 
 <script>
   // import techStackData from '@/data/tech-stack.json';
-  import techStackData from '../../data/tech-stack.json';
-  import { VRow, VCol, VImg, VContainer } from 'vuetify/lib/components';
+  import techStackData from '../../data/tech-stack.json'
+  // import { VRow, VCol, VImg, VContainer } from 'vuetify/lib/components';
 
   export default {
-    components: { VRow, VCol, VImg, VContainer },
+    // components: { VRow, VCol, VImg, VContainer },
     name: 'AboutUs',
     data() {
-      return { techStack: techStackData };
+      return { techStack: techStackData }
     },
-  };
+  }
 </script>
 
 <style>

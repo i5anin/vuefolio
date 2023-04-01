@@ -13,30 +13,30 @@
 </template>
 
 <script>
-  import { VTabs, VTab } from 'vuetify/lib/components';
+  // import { VTabs, VTab } from 'vuetify/lib/components';
   export default {
     name: 'TabTest',
-    components: { VTabs, VTab },
+    // components: { VTabs, VTab },
     data() {
       return {
         tabs: ['_hello', '_about me', '_projects'],
         tabRoutes: ['/', '/about', '/projects'],
         activeTab: 0,
-      };
+      }
     },
     created() {
-      const currentRoute = this.$route.path;
-      this.activeTab = this.tabRoutes.indexOf(currentRoute);
+      const currentRoute = this.$route.path
+      this.activeTab = this.tabRoutes.indexOf(currentRoute)
     },
     watch: {
       $route(to) {
-        const index = this.tabRoutes.indexOf(to.path);
+        const index = this.tabRoutes.indexOf(to.path)
         if (index >= 0) {
-          this.activeTab = index;
+          this.activeTab = index
         }
       },
     },
-  };
+  }
 </script>
 
 <style scoped>

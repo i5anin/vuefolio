@@ -1,12 +1,11 @@
-import { createApp } from 'vue';
-import App from './App.vue';
-import router from './router';
-import { createVuetify } from 'vuetify';
+// Components
+import App from './App.vue'
 
-import 'vuetify/dist/vuetify.css';
+// Composables
+import { createApp } from 'vue'
 
-const app = createApp(App);
-const vuetify = createVuetify();
-app.use(router);
-app.use(vuetify);
-app.mount('#app');
+// Plugins
+import { registerPlugins } from '@/plugins'
+const app = createApp(App)
+registerPlugins(app)
+app.mount('#app')

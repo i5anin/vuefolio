@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="dark-theme">
     <!-- <tab-nav /> -->
     <tab-test />
     <router-view v-slot="{ Component }">
@@ -13,9 +13,9 @@
 
 <script>
   // import { BTabs, BTab } from 'bootstrap-vue';
-  import TabNav from '@/vue/components/TabNav.vue';
-  import TabTest from '@/vue/components/TabTest.vue';
-  import FooterPage from '@/vue/components/FooterPage.vue';
+  import TabNav from '@/vue/components/TabNav.vue'
+  import TabTest from '@/vue/components/TabTest.vue'
+  import FooterPage from '@/vue/components/FooterPage.vue'
 
   export default {
     components: {
@@ -25,7 +25,7 @@
       // BTabs,
       // BTab,
     },
-  };
+  }
 </script>
 
 <style lang="scss">
