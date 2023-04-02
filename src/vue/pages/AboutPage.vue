@@ -50,10 +50,6 @@
   export default {
     name: 'AboutPage',
     data() {
-      // console.log(techStackData)
-      // console.log(techStackData.frontend)
-      // console.log(techStackData.backend)
-      // console.log(techStackData.frontend.frameworks)
       return { techStackData }
     },
     components: {
