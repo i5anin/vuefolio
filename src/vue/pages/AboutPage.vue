@@ -2,27 +2,23 @@
   <div class="about-us">
     <v-container>
       <div class="container">
-        <h1 class="subtitle display-1 mb-4">Технологии</h1>
-        <div class="column" v-for="tech in frameworks" :key="tech.name">
-          <div class="card">
-            <div class="card-content">
-              <div class="media">
-                <div class="media-content">
-                  <img :src="tech.img" width="100" />
-                  <p class="title is-4">{{ tech.name }}</p>
-                </div>
-              </div>
-              <div class="content">
-                <p>{{ tech.description }}</p>
-                <p>
-                  <a :href="tech.link">{{ tech.link }}</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        <!-- <card-about title-name="techStackData">{{ titleName }}<card-about/> -->
+        <h2>frontend</h2>
+        <card-about
+          title-name="Фреймворки"
+          :tech-Stack="techStackData.frontend.frameworks" />
+        <card-about
+          title-name="Языки"
+          :tech-Stack="techStackData.frontend.languages" />
 
+        <h2>backend</h2>
+        <card-about
+          title-name="Инструменты"
+          :tech-Stack="techStackData.backend.languages" />
+        <card-about
+          title-name="Технологии"
+          :tech-Stack="techStackData.backend.frameworks" />
+      </div>
       <v-row>
         <v-col cols="12" md="6">
           <p class="subtitle-1 mb-6">Я веб разработчик</p>
@@ -49,25 +45,30 @@
 
 <script>
   import techStackData from '@/data/tech-stack.json'
+  import CardAbout from '@/vue/components/CardAbout.vue'
 
   export default {
-    name: 'AboutUs',
+    name: 'AboutPage',
     data() {
-      console.log(techStackData)
-
-      // console.log(techStackData.techStack) // "React"
-      console.log(techStackData.techStack.frameworks) // "React"
-      return {
-        techStack: techStackData,
-        frameworks: techStackData.techStack.frameworks,
-      }
+      // console.log(techStackData)
+      // console.log(techStackData.frontend)
+      // console.log(techStackData.backend)
+      // console.log(techStackData.frontend.frameworks)
+      return { techStackData }
+    },
+    components: {
+      CardAbout,
     },
   }
 </script>
 
 <style>
   .about-us {
-    height: 95vh;
+    height: 100%;
     padding: 80px 0;
+  }
+
+  .card {
+    border: 1px solid gray;
   }
 </style>
