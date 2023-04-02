@@ -6,7 +6,8 @@
         <div class="card-content">
           <div class="media">
             <div class="media-content">
-              <img :src="tech.img" width="20" />
+              <img v-if="tech.img" :src="tech.img" width="60" />
+              <img v-else :src="noPhoto" width="60" />
               <p class="title is-4">{{ tech.name }}</p>
             </div>
           </div>
@@ -23,12 +24,23 @@
 </template>
 
 <script>
+  export const noPhoto = 'https://cdn1.ozone.ru/s3/multimedia-q/6371240954.jpg'
   export default {
     name: 'AboutUs',
 
     props: {
       titleName: String,
-      techStack: String,
+      techStack: {
+        type: Array,
+        required: true,
+      },
     },
   }
 </script>
+
+<style>
+  .media-content {
+    display: flex;
+    align-items: center;
+  }
+</style>
