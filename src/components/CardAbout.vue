@@ -7,12 +7,12 @@
           <div class="media">
             <div class="media-content">
               <img v-if="tech.img" :src="tech.img" width="60" />
-              <img v-else :src="noPhoto" width="60" />
+<!--              <img v-else :src="noPictures" width="60" />-->
               <p class="title is-4">{{ tech.name }}</p>
             </div>
           </div>
           <div class="content">
-            <p>{{ tech.description }}</p>
+            <p v-if="tech.description">{{ tech.description }}</p>
             <p>
               <a :href="tech.link">{{ tech.link }}</a>
             </p>
@@ -24,10 +24,9 @@
 </template>
 
 <script>
-  export const noPhoto = 'https://cdn1.ozone.ru/s3/multimedia-q/6371240954.jpg'
+  // export const noPictures = './assets/no-pictures-2.png'
   export default {
-    name: 'AboutUs',
-
+    // name: 'AboutUs',
     props: {
       titleName: String,
       techStack: {

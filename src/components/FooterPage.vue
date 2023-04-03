@@ -6,11 +6,15 @@
         <font-awesome-icon :icon="['fab', 'vuejs']" style="font-size: 1.25em" />
       </a>
       <a class="icons" href="https://www.youtube.com/c/SergeyIsanin">
-        <font-awesome-icon :icon="['fab', 'vk']" style="font-size: 1.25em" />
+        <font-awesome-icon :icon="['fab', 'youtube']" style="font-size: 1.25em" />
       </a>
       <a class="icons" href="https://vk.com/i5anin">
+        <font-awesome-icon :icon="['fab', 'vk']" style="font-size: 1.25em" />
+      </a>
+      <a class="icons" href="#">
         <font-awesome-icon :icon="myIcon" style="font-size: 1.25em" />
       </a>
+
     </div>
     <p class="time">
       {{ currentTime }}

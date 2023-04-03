@@ -27,7 +27,7 @@ see the project"
 </template>
 
 <script>
-  import TerminalWindow from '@/vue/components/TerminalWindow.vue'
+  import TerminalWindow from '@/components/TerminalWindow.vue'
 
   export default {
     components: {

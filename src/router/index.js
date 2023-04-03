@@ -25,11 +25,11 @@
 
 // export default router
 import { createRouter, createWebHistory } from 'vue-router'
-import HelloPage from '@/vue/pages/HelloPage.vue'
-import AboutPage from '@/vue/pages/AboutPage.vue'
-import ProjectPage from '@/vue/pages/ProjectPage.vue'
+import HelloPage from '@/pages/HelloPage.vue'
+import AboutPage from '@/pages/AboutPage.vue'
+import ProjectPage from '@/pages/ProjectPage.vue'
 // Error404
-import ErrorPage from '@/vue/pages/error/ErrorPage.vue'
+import ErrorPage from '@/pages/error/ErrorPage.vue'
 
 const routes = [
   { path: '/', name: 'Hello', component: HelloPage },

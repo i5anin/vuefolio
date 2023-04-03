@@ -12,8 +12,8 @@
 </template>
 
 <script>
-  import TabNav from '@/vue/components/TabNav.vue'
-  import FooterPage from '@/vue/components/FooterPage.vue'
+  import TabNav from '@/components/TabNav.vue'
+  import FooterPage from '@/components/FooterPage.vue'
 
   export default {
     components: {

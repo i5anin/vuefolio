@@ -45,7 +45,7 @@
 
 <script>
   import techStackData from '@/data/tech-stack.json'
-  import CardAbout from '@/vue/components/CardAbout.vue'
+  import CardAbout from '@/components/CardAbout.vue'
 
   export default {
     name: 'AboutPage',
