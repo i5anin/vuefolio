@@ -63,8 +63,4 @@
     height: 100%;
     padding: 80px 0;
   }
-
-  .card {
-    border: 1px solid gray;
-  }
 </style>
