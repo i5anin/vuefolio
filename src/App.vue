@@ -1,24 +1,24 @@
 <template>
   <div class="dark-theme">
-    <tab-nav />
+    <tab-pages />
 
     <router-view v-slot="{ Component }">
       <transition name="fade" mode="out-in">
         <component class="page-body" :is="Component" />
       </transition>
     </router-view>
-    <FooterPage />
+    <FooterPages />
   </div>
 </template>
 
 <script>
-  import TabNav from '@/components/TabNav.vue'
-  import FooterPage from '@/components/FooterPage.vue'
+  import TabPages from '@/components/TabPages.vue'
+  import FooterPages from '@/components/FooterPages.vue'
 
   export default {
     components: {
-      TabNav,
-      FooterPage,
+      TabPages,
+      FooterPages,
     },
   }
 </script>
