@@ -9,19 +9,19 @@
       {
         "name": "HTML",
         "doc": "https://developer.mozilla.org/en-US/docs/Web/HTML",
-        "img": "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_html_icon_130541.png"
+        "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
       },
       {
         "name": "CSS",
         "doc": "https://developer.mozilla.org/en-US/docs/Web/CSS",
-        "img": "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_css_icon_130661.png"
+        "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
       }
     ],
     "frameworks": [
       {
         "name": "Vue.js",
         "doc": "https://vuejs.org/v2/guide/",
-        "img": "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_vue_icon_130078.png"
+        "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg"
       },
       {
         "name": "Nuxt.js",
@@ -54,7 +54,7 @@
       {
         "name": "GitHub",
         "doc": "https://eslint.org/docs/user-guide/getting-started",
-        "img": "../src/assets/ico/github.svg"
+        "img": "https://raw.githubusercontent.com/i5anin/vuefolio/main/src/assets/ico/github.svg"
       },
       {
         "name": "GitLab",
@@ -88,12 +88,12 @@
       {
         "name": "DaVinci Resolve",
         "doc": "",
-        "img": "../src/assets/ico/DaVinciResolve.svg"
+        "img": "https://raw.githubusercontent.com/i5anin/vuefolio/main/src/assets/ico/DaVinciResolve.svg"
       },
       {
         "name": "Photoshop",
         "doc": "",
-        "img": "../src/assets/ico/photoshop.svg"
+        "img": "https://raw.githubusercontent.com/i5anin/vuefolio/main/src/assets/ico/photoshop.svg"
       },
       {
         "name": "Figma",
