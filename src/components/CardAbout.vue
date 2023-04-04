@@ -1,6 +1,6 @@
 <template>
   <div class="cards">
-    <h1 class="subtitle display-1 mb-4">{{ titleName }}</h1>
+    <h4 class="subtitle display-1 mb-4">{{ titleName }}</h4>
     <div class="column" v-for="tech in techStack" :key="tech.name">
       <div class="card">
         <div class="card-content">

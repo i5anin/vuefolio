@@ -19,31 +19,47 @@
     ],
     "frameworks": [
       {
-        "name": "React",
-        "doc": "https://reactjs.org/docs/getting-started.html",
-        "img": "https://cdn.icon-icons.com/icons2/2415/PNG/512/react_original_logo_icon_146374.png"
-      },
-      {
         "name": "Vue.js",
         "doc": "https://vuejs.org/v2/guide/",
         "img": "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_vue_icon_130078.png"
+      },
+      {
+        "name": "Nuxt.js",
+        "doc": "",
+        "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nuxtjs/nuxtjs-original.svg"
+      },
+      {
+        "name": "Vuetify",
+        "doc": "",
+        "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/vuetify/vuetify-original.svg"
       }
+
     ],
     "tools": [
       {
         "name": "Webpack",
         "doc": "https://webpack.js.org/concepts/",
-        "img": "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_webpack_icon_130154.png"
+        "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/webpack/webpack-original.svg"
       },
       {
         "name": "Babel",
         "doc": "https://babeljs.io/docs/en/",
-        "img": "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_babel_icon_130506.png"
+        "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/babel/babel-original.svg"
       },
       {
         "name": "ESLint",
         "doc": "https://eslint.org/docs/user-guide/getting-started",
-        "img": "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_eslint_icon_130282.png"
+        "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/eslint/eslint-original.svg"
+      },
+      {
+        "name": "GitHub",
+        "doc": "https://eslint.org/docs/user-guide/getting-started",
+        "img": "../src/assets/ico/github.svg"
+      },
+      {
+        "name": "GitLab",
+        "doc": "https://eslint.org/docs/user-guide/getting-started",
+        "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/gitlab/gitlab-original.svg"
       }
     ]
   },
@@ -57,20 +73,35 @@
       {
         "name": "Node.js",
         "doc": "https://nodejs.org/en/docs/",
-        "img": "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_node_icon_130301.png"
-      }
-    ],
-    "frameworks": [
-      {
-        "name": "Express.js",
-        "doc": "https://expressjs.com/en/starter/installing.html",
-        "img": "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_express_icon_130509.png"
+        "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"
       },
       {
-        "name": "Koa.js",
-        "doc": "https://koajs.com/#installation",
-        "img": "https://cdn.icon-icons.com/icons2/2415/PNG/512/koa"
+        "name": "Python",
+        "doc": "https://docs.python.org/3/index.html",
+        "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
       }
-    ]
+    ],
+    "frameworks": []
+  },
+  "graphic": {
+    "tools": [
+      {
+        "name": "DaVinci Resolve",
+        "doc": "",
+        "img": "../src/assets/ico/DaVinciResolve.svg"
+      },
+      {
+        "name": "Photoshop",
+        "doc": "",
+        "img": "../src/assets/ico/photoshop.svg"
+      },
+      {
+        "name": "Figma",
+        "doc": "",
+        "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg"
+      }
+    ],
+    "frameworks": []
   }
+
 }

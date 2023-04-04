@@ -3,21 +3,28 @@
     <v-container>
       <div class="container">
         <!-- <card-about title-name="techStackData">{{ titleName }}<card-about/> -->
-        <h2>frontend</h2>
+        <h2>_frontend</h2>
         <card-about
           title-name="Фреймворки"
           :tech-Stack="techStackData.frontend.frameworks" />
         <card-about
           title-name="Языки"
           :tech-Stack="techStackData.frontend.languages" />
+        <card-about
+          title-name="Инструменты"
+          :tech-Stack="techStackData.frontend.tools" />
 
-        <h2>backend</h2>
+        <h2 class="main-title">_backend</h2>
         <card-about
           title-name="Инструменты"
           :tech-Stack="techStackData.backend.languages" />
+        <!--        <card-about-->
+        <!--          title-name="Технологии"-->
+        <!--          :tech-Stack="techStackData.backend.frameworks" />-->
+        <h2 class="main-title">_graphic</h2>
         <card-about
-          title-name="Технологии"
-          :tech-Stack="techStackData.backend.frameworks" />
+          title-name="Инструменты"
+          :tech-Stack="techStackData.graphic.tools" />
       </div>
       <v-row>
         <v-col cols="12" md="6">
@@ -59,6 +66,13 @@
 </script>
 
 <style>
+  .subtitle {
+    padding-top: 30px;
+  }
+  .main-title {
+    padding-top: 80px;
+  }
+
   .about-us {
     height: 100%;
     padding: 80px 0;
