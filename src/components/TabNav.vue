@@ -13,7 +13,6 @@
 </template>
 
 <script>
-  // import { VTabs, VTab } from 'vuetify/lib/components';
   export default {
     name: 'TabTest',
     // components: { VTabs, VTab },

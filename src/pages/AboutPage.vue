@@ -2,27 +2,30 @@
   <div class="about-us">
     <v-container>
       <div class="container">
-        <h1 class="subtitle display-1 mb-4">Технологии</h1>
-        <div class="column" v-for="tech in techStack" :key="tech.name">
-          тест
-          <div class="card">
-            <div class="card-content">
-              <div class="media">
-                <div class="media-content">
-                  <p class="title is-4">{{ tech.name }}</p>
-                </div>
-              </div>
-              <div class="content">
-                <p>{{ tech.description }}</p>
-                <p>
-                  <a :href="tech.link">{{ tech.link }}</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        <!-- <card-about title-name="techStackData">{{ titleName }}<card-about/> -->
+        <h2>_frontend</h2>
+        <card-about
+          title-name="Фреймворки"
+          :tech-Stack="techStackData.frontend.frameworks" />
+        <card-about
+          title-name="Языки"
+          :tech-Stack="techStackData.frontend.languages" />
+        <card-about
+          title-name="Инструменты"
+          :tech-Stack="techStackData.frontend.tools" />
 
+        <h2 class="main-title">_backend</h2>
+        <card-about
+          title-name="Инструменты"
+          :tech-Stack="techStackData.backend.languages" />
+        <!--        <card-about-->
+        <!--          title-name="Технологии"-->
+        <!--          :tech-Stack="techStackData.backend.frameworks" />-->
+        <h2 class="main-title">_graphic</h2>
+        <card-about
+          title-name="Инструменты"
+          :tech-Stack="techStackData.graphic.tools" />
+      </div>
       <v-row>
         <v-col cols="12" md="6">
           <p class="subtitle-1 mb-6">Я веб разработчик</p>
@@ -49,18 +52,29 @@
 
 <script>
   import techStackData from '@/data/tech-stack.json'
+  import CardAbout from '@/components/CardAbout.vue'
 
   export default {
-    name: 'AboutUs',
+    name: 'AboutPage',
     data() {
-      return { techStack: techStackData }
+      return { techStackData }
+    },
+    components: {
+      CardAbout,
     },
   }
 </script>
 
 <style>
+  .subtitle {
+    padding-top: 30px;
+  }
+  .main-title {
+    padding-top: 80px;
+  }
+
   .about-us {
-    height: 95vh;
+    height: 100%;
     padding: 80px 0;
   }
 </style>

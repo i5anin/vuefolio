@@ -1,3 +1,6 @@
+// Icons
+import '@mdi/font/css/materialdesignicons.css'
+
 // Components
 import App from './App.vue'
 
