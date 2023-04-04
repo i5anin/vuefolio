@@ -3,23 +3,21 @@
     <h4 class="subtitle display-1 mb-4">{{ titleName }}</h4>
     <div class="column" v-for="tech in techStack" :key="tech.name">
       <div class="card">
-        <div class="card-content">
-          <!-- media -->
-          <div class="media">
-            <div class="media-content">
-              <v-img
-                v-if="tech.img && tech.img !== '' && tech.img !== null"
-                :src="tech.img" />
-              <v-img v-else :src="noPictures" />
-              <p class="title is-4">{{ tech.name }}</p>
-            </div>
+        <!-- media -->
+        <div class="media">
+          <div class="media-content">
+            <v-img
+              v-if="tech.img && tech.img !== '' && tech.img !== null"
+              :src="tech.img" />
+            <v-img v-else :src="noPictures" />
+            <p class="title is-4">{{ tech.name }}</p>
           </div>
-          <!-- media -->
-          <!--          <div class="content">-->
-          <!--            <p v-if="tech.description">{{ tech.description }}</p>-->
-          <!--            <a :href="tech.link">{{ tech.link }}</a>-->
-          <!--          </div>-->
         </div>
+        <!-- media -->
+        <!--          <div class="content">-->
+        <!--            <p v-if="tech.description">{{ tech.description }}</p>-->
+        <!--            <a :href="tech.link">{{ tech.link }}</a>-->
+        <!--          </div>-->
       </div>
     </div>
   </div>
@@ -40,7 +38,10 @@
 
 <style>
   .card {
-    border: 1px solid gray;
+    outline: 1px solid gray;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #00d4e766;
+    background-color: #0a0d12;
   }
 
   .column {
@@ -72,6 +73,5 @@
     align-items: center;
     padding: 20px;
     width: 120px;
-    background-color: #0a0d12;
   }
 </style>
