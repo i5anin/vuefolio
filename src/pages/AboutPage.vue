@@ -43,7 +43,7 @@
           </a>
         </v-col>
         <v-col cols="12" md="6">
-          <v-img src="@/assets/About-Us.jpg" height="100%" contain></v-img>
+          <!--          <v-img src="@/assets/About-Us.jpg" height="100%" contain></v-img>-->
         </v-col>
       </v-row>
     </v-container>
