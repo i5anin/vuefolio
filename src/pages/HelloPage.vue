@@ -29,7 +29,7 @@ see the project"
 </template>
 
 <script>
-  import TerminalWindow from '@/components/TerminalWindow.vue'
+  import TerminalWindow from '@/components/ShowBackend.vue'
 
   export default {
     components: {

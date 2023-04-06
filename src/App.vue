@@ -12,7 +12,7 @@
 </template>
 
 <script>
-  import TabPages from '@/components/TabPages.vue'
+  import TabPages from '@/components/NavTabs.vue'
   import FooterPages from '@/components/FooterPages.vue'
 
   export default {

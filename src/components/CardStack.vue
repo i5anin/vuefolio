@@ -2,6 +2,7 @@
   <div class="cards">
     <h4 class="subtitle display-1 mb-4">{{ titleName }}</h4>
     <div class="column" v-for="tech in techStack" :key="tech.name">
+      <!-- v-card -->
       <div class="card">
         <!-- media -->
         <div class="media">
@@ -14,6 +15,7 @@
           </div>
         </div>
         <!-- media -->
+        <!-- тут нужно в нажатие на карточку расценивать как переход к документации -->
         <!--          <div class="content">-->
         <!--            <p v-if="tech.description">{{ tech.description }}</p>-->
         <!--            <a :href="tech.link">{{ tech.link }}</a>-->
@@ -37,6 +39,11 @@
 </script>
 
 <style>
+  .v-circular {
+    position: relative;
+    top: -10px;
+    right: -60px;
+  }
   .card {
     outline: 1px solid gray;
     border-radius: 7px;

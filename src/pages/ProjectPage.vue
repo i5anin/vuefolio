@@ -3,7 +3,7 @@
     <v-container>
       <h1 class="title">{{ project.title }}</h1>
       <div class="flex-center">
-        <TerminalWindow
+        <ShowBackend
           pre-content="
 /**
 * Project 1
@@ -12,7 +12,7 @@
 see the project"
           header-content="Technologies Used 2, 155 commits"
           class="terminal-size" />
-        <TerminalWindow
+        <ShowBackend
           pre-content="
 /**
 * Project 2
@@ -21,17 +21,24 @@ see the project"
 see the project"
           header-content="Technologies Used 7, 345 commits"
           class="terminal-size" />
+
+        <ShowFrontend
+          img-content=""
+          header-content="Technologies Used 2, 345 commits"
+          class="terminal-size" />
       </div>
     </v-container>
   </div>
 </template>
 
 <script>
-  import TerminalWindow from '@/components/TerminalWindow.vue'
+  import ShowBackend from '@/components/ShowBackend.vue'
+  import ShowFrontend from '@/components/ShowFrontend.vue'
 
   export default {
     components: {
-      TerminalWindow,
+      ShowBackend,
+      ShowFrontend,
     },
     name: 'ProjectPage',
     props: {

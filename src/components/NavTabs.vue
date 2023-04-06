@@ -1,5 +1,11 @@
 <template>
-  <v-tabs v-model="activeTab" color="primary" centered>
+  <v-tabs
+    v-model="activeTab"
+    color="primary"
+    centered
+    bg-color="teal-darken-3"
+    show-arrows
+    slider-color="teal-lighten-3">
     <v-tab
       v-for="(tab, index) in tabs"
       :key="index"
@@ -15,7 +21,6 @@
 <script>
   export default {
     name: 'TabTest',
-    // components: { VTabs, VTab },
     data() {
       return {
         tabs: ['_hello', '_about me', '_projects'],
@@ -42,15 +47,21 @@
   .tab {
     font-size: 20px;
     text-decoration: none;
-    padding: 20px;
+    /*padding: 20px;*/
+
+    /*color: red;*/
+    border-top: 1px solid #828282;
+    border-right: 1px solid #828282;
+    border-left: 1px solid #828282;
+    border-bottom: 1px solid #828282;
   }
-  .active-tab {
-    color: rgb(255, 140, 0);
+  .tab:active {
+    color: rgb(255, 140, 0) !important;
     font-weight: bold;
     border-top: 3px solid #ff0000;
     border-right: 1px solid #828282;
     border-left: 1px solid #828282;
-    border-bottom: 0px solid #828282;
+    border-bottom: 0 solid #828282;
   }
   .v-tabs__slider {
     background-color: rgb(255, 140, 0) !important;
