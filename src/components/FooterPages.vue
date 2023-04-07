@@ -2,31 +2,24 @@
   <div class="footer">
     <div>
       <a class="find-me">find me in:</a>
-      <a class="icons" href="https://github.com/i5anin">
-        <font-awesome-icon :icon="['fab', 'vuejs']" style="font-size: 1.25em" />
+      <a
+        v-for="(icon, index) in icons"
+        :key="index"
+        class="icons"
+        :href="icon.link">
+        <font-awesome-icon :icon="icon.icon" style="font-size: 1.25em" />
       </a>
-      <a class="icons" href="https://www.youtube.com/c/SergeyIsanin">
-        <font-awesome-icon :icon="['fab', 'youtube']" style="font-size: 1.25em" />
-      </a>
-      <a class="icons" href="https://vk.com/i5anin">
-        <font-awesome-icon :icon="['fab', 'vk']" style="font-size: 1.25em" />
-      </a>
-      <a class="icons" href="#">
-        <font-awesome-icon :icon="myIcon" style="font-size: 1.25em" />
-      </a>
-
     </div>
     <p class="time">
       {{ currentTime }}
     </p>
   </div>
 </template>
-
 <script>
   import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
   import { library } from '@fortawesome/fontawesome-svg-core'
   import { fab } from '@fortawesome/free-brands-svg-icons'
-  import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+  // import { faCoffee } from '@fortawesome/free-solid-svg-icons'
   library.add(fab)
   export default {
     components: {
@@ -35,8 +28,24 @@
     data() {
       return {
         currentTime: '',
-        myIcon: faCoffee,
-        vk: "[' fab', 'vk']",
+        icons: [
+          {
+            icon: ['fab', 'github'],
+            link: 'https://github.com/i5anin',
+          },
+          {
+            icon: ['fab', 'youtube'],
+            link: 'https://www.youtube.com/c/SergeyIsanin',
+          },
+          {
+            icon: ['fab', 'vk'],
+            link: 'https://vk.com/i5anin',
+          },
+          // {
+          //   icon: faCoffee,
+          //   link: '#',
+          // },
+        ],
       }
     },
     created() {
@@ -47,7 +56,6 @@
     },
   }
 </script>
-
 <style lang="scss">
   $primary-color: #8b6e34;
   $primary-color-2: #ff8c00;
@@ -55,7 +63,6 @@
   $background-color: #0d1017;
   $text-color: #f5f8ff;
 
-  /* Изменение цвета при наведении для иконок Bootstrap */
   .bi:hover {
     color: $primary-color-2;
     cursor: pointer;

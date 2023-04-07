@@ -33,9 +33,11 @@
             <v-img
               src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif"
               width="70px" />
-            Мой путь в it начался ещё со школы и института, немного поработал в
-            it сфере, укрепил свои знания курсами по Vue.js от Skillbox, где я
-            проходил 7-месяцев курсы.
+            <p class="subtitle-1 mb-6">
+              Мой путь в it начался ещё со школы и института, немного поработал
+              в it сфере, укрепил свои знания курсами по Vue.js от Skillbox, где
+              я проходил 7-месяцев курсы.
+            </p>
 
             <p class="subtitle-1 mb-6">Начал решать задачки тут:</p>
             <a href="https://leetcode.com/i5anin/">

@@ -1,5 +1,6 @@
 <template>
   <div class="hello-page-container">
+    <VeritcalLineBar />
     <v-container>
       <div class="flex-center">
         <div>
@@ -30,10 +31,12 @@ see the project"
 
 <script>
   import TerminalWindow from '@/components/ShowBackend.vue'
+  import VeritcalLineBar from '@/components/VeritcalLineBar.vue'
 
   export default {
     components: {
       TerminalWindow,
+      VeritcalLineBar,
     },
     name: 'HelloPage',
   }
