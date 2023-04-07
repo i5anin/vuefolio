@@ -4,12 +4,14 @@
       {
         "name": "JavaScript",
         "doc": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-        "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+        "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+        "knowledge": 80
       },
       {
         "name": "HTML",
         "doc": "https://developer.mozilla.org/en-US/docs/Web/HTML",
-        "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
+        "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg",
+        "knowledge": 70
       },
       {
         "name": "CSS",

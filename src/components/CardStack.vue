@@ -2,9 +2,7 @@
   <div class="cards">
     <h4 class="subtitle display-1 mb-4">{{ titleName }}</h4>
     <div class="column" v-for="tech in techStack" :key="tech.name">
-      <!-- v-card -->
       <div class="card">
-        <!-- media -->
         <div class="media">
           <div class="media-content">
             <v-img
@@ -12,14 +10,21 @@
               :src="tech.img" />
             <v-img v-else :src="noPictures" />
             <p class="title is-4">{{ tech.name }}</p>
+            <div class="progress-bar">
+              <div class="progress" :style="{ width: tech.knowledge + '%' }">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  :style="{ width: tech.knowledge + '%' }"
+                  :aria-valuenow="tech.knowledge"
+                  aria-valuemin="0"
+                  aria-valuemax="100">
+                  {{ tech.knowledge }}%
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- media -->
-        <!-- тут нужно в нажатие на карточку расценивать как переход к документации -->
-        <!--          <div class="content">-->
-        <!--            <p v-if="tech.description">{{ tech.description }}</p>-->
-        <!--            <a :href="tech.link">{{ tech.link }}</a>-->
-        <!--          </div>-->
       </div>
     </div>
   </div>
@@ -30,7 +35,7 @@
     data() {
       return { noPictures: '../src/assets/no-pictures-2.png' }
     },
-    // name: 'AboutUs',
+    name: 'AboutUs',
     props: {
       titleName: String,
       techStack: { type: Array, required: true },
@@ -39,11 +44,6 @@
 </script>
 
 <style>
-  .v-circular {
-    position: relative;
-    top: -10px;
-    right: -60px;
-  }
   .card {
     outline: 1px solid gray;
     border-radius: 7px;
@@ -61,7 +61,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: calc(0.6em + 0.4vw); /* размер шрифта зависит от ширины блока */
+    font-size: calc(0.6em + 0.4vw);
   }
 
   .cards {
@@ -80,5 +80,18 @@
     align-items: center;
     padding: 20px;
     width: 120px;
+  }
+
+  .progress {
+    height: 2px;
+    background-color: #ddd;
+    margin-top: 10px;
+  }
+
+  .progress-bar {
+    height: 100%;
+    background-color: #4caf50;
+    text-align: center;
+    line-height: 10px;
   }
 </style>
