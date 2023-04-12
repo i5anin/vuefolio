@@ -10,8 +10,12 @@
           <h2 class="dev color-blue">
             I want to be a middle front-end developer
           </h2>
+
           <p class="font-size20">// write the code below to continue</p>
           <p class="color-pink">> <span class="underline">w</span>hois</p>
+
+          <p>Version: {{ version }}</p>
+          <p>Commit hash: {{ commitHash }}</p>
         </div>
         <div>
           <TerminalWindow
@@ -37,6 +41,12 @@ see the project"
     components: {
       TerminalWindow,
       VeritcalLineBar,
+    },
+    data() {
+      return {
+        version: process.env.APP_VERSION,
+        commitHash: process.env.APP_COMMIT_HASH,
+      }
     },
     name: 'HelloPage',
   }
