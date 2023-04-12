@@ -33,7 +33,7 @@
 <script>
   export default {
     data() {
-      return { noPictures: '../src/assets/no-pictures-2.png' }
+      return { noPictures: '../src/assets/no-pictures.png' }
     },
     name: 'AboutUs',
     props: {
