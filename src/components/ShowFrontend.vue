@@ -6,7 +6,7 @@
       </div>
     </div>
     <div class="value">
-      <v-img src="../../src/assets/logo.png" />
+      <v-img src="../../src/assets/preview/todo-list.png" />
     </div>
   </div>
 </template>
