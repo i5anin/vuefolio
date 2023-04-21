@@ -12,9 +12,6 @@
 </template>
 
 <script>
-  import { version } from '@/../version.js'
-  console.log(`App version: ${version.appVersion}`)
-  console.log(`Commit hash: ${version.commitHash}`)
   import TabPages from '@/components/NavTabs.vue'
   import FooterPages from '@/components/FooterPages.vue'
 
@@ -23,10 +20,6 @@
       TabPages,
       FooterPages,
     },
-    // created() {
-    //   console.log(`App version: ${version.appVersion}`)
-    //   console.log(`Commit hash: ${version.commitHash}`)
-    // },
   }
 </script>
 
