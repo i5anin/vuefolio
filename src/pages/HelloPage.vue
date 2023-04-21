@@ -4,13 +4,19 @@
     <v-container>
       <div class="flex-center">
         <div>
-          <p class="hello">Привет! Я</p>
-          <img src="../../assets/avatar-1.jpg" />
-          <h1 class="fio">Сергей Исанин</h1>
-          <h2 class="crossed-out">Младший front-end разработчик</h2>
-          <h2 class="dev color-blue">
-            Я хочу стать средним front-end разработчиком
-          </h2>
+          <div class="flex">
+            <div class="fio">
+              <p class="hello">Привет! Я</p>
+              <h1 class="fio">Исанин Сергей</h1>
+            </div>
+            <v-img class="avatar" src="@/assets/avatar-2.jpg" />
+          </div>
+          <div class="info">
+            <h2 class="crossed-out">Младший front-end разработчик</h2>
+            <h2 class="dev color-blue">
+              Я хочу стать средним front-end разработчиком
+            </h2>
+          </div>
           <!--          <p class="font-size20">// напишите код ниже, чтобы продолжить</p>-->
           <!--          <p class="color-pink">> <span class="underline">w</span>hois</p>-->
         </div>
@@ -44,6 +50,23 @@ see the project"
 </script>
 
 <style scoped>
+  .info {
+    padding: 20px 0;
+  }
+  .fio {
+    padding-right: 20px;
+  }
+
+  .avatar {
+    width: 350px;
+    height: 350px;
+    border-radius: 1000px;
+    border: 10px solid rgba(255, 255, 255, 0);
+    outline: 2px solid #12151a;
+    /*padding: 40px;*/
+    box-sizing: border-box;
+  }
+
   .hello-page-container {
     display: flex;
     flex-direction: column;

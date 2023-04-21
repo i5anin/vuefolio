@@ -6,7 +6,7 @@
       </div>
     </div>
     <div class="value">
-      <v-img src="../../src/assets/preview/todo-list.png" />
+      <v-img src="@/assets/preview/todo-list.png" />
     </div>
   </div>
 </template>
@@ -41,7 +41,7 @@
   .header-content {
     font-size: 18px;
     color: $secondary-color;
-    padding-left: 15px;
+    padding-left: 7px;
   }
 
   .terminal {

@@ -53,7 +53,7 @@
 
   .line {
     width: 2px;
-    height: 30%;
+    height: 30vh;
     background-color: gray;
   }
 
