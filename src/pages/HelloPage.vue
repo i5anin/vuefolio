@@ -4,14 +4,15 @@
     <v-container>
       <div class="flex-center">
         <div>
-          <p class="hello">Hello! I am</p>
-          <h1 class="fio">Sergey Isanin</h1>
-          <h2 class="crossed-out">Junior front-end developer</h2>
+          <p class="hello">Привет! Я</p>
+          <img src="../../assets/avatar-1.jpg" />
+          <h1 class="fio">Сергей Исанин</h1>
+          <h2 class="crossed-out">Младший front-end разработчик</h2>
           <h2 class="dev color-blue">
-            I want to be a middle front-end developer
+            Я хочу стать средним front-end разработчиком
           </h2>
-          <p class="font-size20">// write the code below to continue</p>
-          <p class="color-pink">> <span class="underline">w</span>hois</p>
+          <!--          <p class="font-size20">// напишите код ниже, чтобы продолжить</p>-->
+          <!--          <p class="color-pink">> <span class="underline">w</span>hois</p>-->
         </div>
         <div>
           <TerminalWindow
