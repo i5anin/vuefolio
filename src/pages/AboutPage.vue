@@ -2,7 +2,7 @@
   <div class="about-us">
     <v-container>
       <div class="flex">
-        <v-container>
+        <v-container class="stack">
           <!-- <card-about title-name="techStackData">{{ titleName }}<card-about/> -->
           <h2>_frontend</h2>
           <card-stack
@@ -27,7 +27,7 @@
             title-name="Инструменты"
             :techStack="techStackData.graphic.tools" />
         </v-container>
-        <v-row>
+        <v-row class="my-info">
           <v-col cols="12" md="6">
             <p class="subtitle-1 mb-6">Я веб разработчик.</p>
             <v-img
@@ -71,6 +71,12 @@
 </script>
 
 <style>
+  .stack {
+    width: 120%;
+  }
+  .my-info {
+    width: 120%;
+  }
   .flex {
     justify-content: space-between;
     display: flex;
