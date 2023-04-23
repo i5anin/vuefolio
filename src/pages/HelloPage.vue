@@ -58,12 +58,11 @@ see the project"
   }
 
   .avatar {
-    width: 350px;
-    height: 350px;
+    width: 45%;
+    height: 45%;
     border-radius: 1000px;
     border: 10px solid rgba(255, 255, 255, 0);
     outline: 2px solid #12151a;
-    /*padding: 40px;*/
     box-sizing: border-box;
   }
 
@@ -82,33 +81,46 @@ see the project"
     font-size: 20px;
   }
   .fio {
-    font-size: 80px;
+    font-size: 4.5rem;
   }
 
   .flex-center {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /*justify-content: center;*/
+    /*align-items: center;*/
   }
 
   .color-blue {
     color: rgb(161, 255, 242);
   }
 
-  .font-size20 {
-    font-size: 20px;
-  }
-
-  .color-pink {
-    color: pink;
-    font-size: 40px;
-  }
-
-  .underline {
-    text-decoration: underline;
-  }
-
   .crossed-out {
     text-decoration: line-through;
+  }
+
+  @media only screen and (max-width: 320px) {
+  }
+
+  @media only screen and (min-width: 321px) and (max-width: 768px) {
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+  }
+
+  @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    .terminal-size {
+      height: 250px;
+      width: 350px;
+    }
+    .avatar {
+      width: 35%;
+      height: 35%;
+
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  @media only screen and (min-width: 1441px) {
   }
 </style>

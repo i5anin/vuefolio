@@ -72,7 +72,7 @@
 
 <style>
   .stack {
-    width: 120%;
+    width: 150%;
   }
   .my-info {
     width: 120%;
