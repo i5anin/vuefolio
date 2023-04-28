@@ -74,8 +74,8 @@ see the project"
     height: 95vh;
   }
   .terminal-size {
-    height: 250px;
-    width: 450px;
+    height: 12em;
+    width: 16em;
   }
   .hello {
     font-size: 20px;
@@ -85,7 +85,7 @@ see the project"
   }
 
   .flex-center {
-    display: flex;
+    display: block;
     /*justify-content: center;*/
     /*align-items: center;*/
   }
@@ -105,19 +105,24 @@ see the project"
   }
 
   @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .avatar {
+      width: 25%;
+      height: 25%;
+    }
   }
 
-  @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  @media only screen and (min-width: 1024px) and (max-width: 1440px) {
     .terminal-size {
-      height: 250px;
-      width: 350px;
+      height: 12em;
+      width: 16em;
     }
     .avatar {
       width: 35%;
       height: 35%;
-
+    }
+    .flex-center {
+      justify-content: space-between;
       align-items: center;
-      justify-content: center;
     }
   }
 
