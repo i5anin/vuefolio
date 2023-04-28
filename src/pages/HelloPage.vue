@@ -17,8 +17,6 @@
               Я хочу стать средним front-end разработчиком
             </h2>
           </div>
-          <!--          <p class="font-size20">// напишите код ниже, чтобы продолжить</p>-->
-          <!--          <p class="color-pink">> <span class="underline">w</span>hois</p>-->
         </div>
         <div>
           <TerminalWindow
@@ -50,6 +48,7 @@ see the project"
 </script>
 
 <style scoped>
+  /*defolt*/
   .info {
     padding: 20px 0;
   }
@@ -58,12 +57,13 @@ see the project"
   }
 
   .avatar {
-    width: 45%;
-    height: 45%;
-    border-radius: 1000px;
-    border: 10px solid rgba(255, 255, 255, 0);
-    outline: 2px solid #12151a;
-    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+    /*border: 10px solid rgba(255, 255, 255, 0);*/
+    /*outline: 2px solid #12151a;*/
+    /*box-sizing: border-box;*/
   }
 
   .hello-page-container {
@@ -85,7 +85,7 @@ see the project"
   }
 
   .flex-center {
-    display: block;
+    display: flex;
     /*justify-content: center;*/
     /*align-items: center;*/
   }
@@ -99,15 +99,20 @@ see the project"
   }
 
   @media only screen and (max-width: 320px) {
+    .flex-center {
+      display: block;
+    }
   }
 
   @media only screen and (min-width: 321px) and (max-width: 768px) {
+    .flex-center {
+      display: block;
+    }
   }
 
   @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    .avatar {
-      width: 25%;
-      height: 25%;
+    .flex-center {
+      display: block;
     }
   }
 
@@ -116,14 +121,36 @@ see the project"
       height: 12em;
       width: 16em;
     }
-    .avatar {
-      width: 35%;
-      height: 35%;
-    }
+    /*.avatar {*/
+    /*  width: 100px;*/
+    /*  height: 100px;*/
+
+    /*  border-radius: 50%;*/
+    /*  border: 10px solid rgba(255, 255, 255, 0);*/
+    /*  outline: 2px solid #12151a;*/
+    /*  box-sizing: border-box;*/
+    /*}*/
     .flex-center {
       justify-content: space-between;
       align-items: center;
     }
+    .flex-center {
+      display: block;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @media only screen and (min-width: 1280px) and (max-width: 1440px) {
+    /*.avatar {*/
+    /*  width: 100px;*/
+    /*  height: 100px;*/
+
+    /*  border-radius: 50%;*/
+    /*  border: 10px solid rgba(255, 255, 255, 0);*/
+    /*  outline: 2px solid #12151a;*/
+    /*  box-sizing: border-box;*/
+    /*}*/
   }
 
   @media only screen and (min-width: 1441px) {
