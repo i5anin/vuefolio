@@ -48,7 +48,7 @@ see the project"
 </script>
 
 <style scoped>
-  /*defolt*/
+  /* ---------- default ---------- */
   .info {
     padding: 20px 0;
   }
@@ -61,9 +61,6 @@ see the project"
     height: 100px;
 
     border-radius: 50%;
-    /*border: 10px solid rgba(255, 255, 255, 0);*/
-    /*outline: 2px solid #12151a;*/
-    /*box-sizing: border-box;*/
   }
 
   .hello-page-container {
@@ -86,8 +83,6 @@ see the project"
 
   .flex-center {
     display: flex;
-    /*justify-content: center;*/
-    /*align-items: center;*/
   }
 
   .color-blue {
@@ -98,38 +93,33 @@ see the project"
     text-decoration: line-through;
   }
 
+  /* ---------- 320px ---------- */
   @media only screen and (max-width: 320px) {
     .flex-center {
       display: block;
     }
   }
 
+  /* ---------- 321px - 768px ---------- */
   @media only screen and (min-width: 321px) and (max-width: 768px) {
     .flex-center {
       display: block;
     }
   }
 
+  /* ---------- 769px - 1024px ---------- */
   @media only screen and (min-width: 769px) and (max-width: 1024px) {
     .flex-center {
       display: block;
     }
   }
 
+  /* ---------- 1024px - 1440px ---------- */
   @media only screen and (min-width: 1024px) and (max-width: 1440px) {
     .terminal-size {
       height: 12em;
       width: 16em;
     }
-    /*.avatar {*/
-    /*  width: 100px;*/
-    /*  height: 100px;*/
-
-    /*  border-radius: 50%;*/
-    /*  border: 10px solid rgba(255, 255, 255, 0);*/
-    /*  outline: 2px solid #12151a;*/
-    /*  box-sizing: border-box;*/
-    /*}*/
     .flex-center {
       justify-content: space-between;
       align-items: center;
@@ -141,18 +131,7 @@ see the project"
     }
   }
 
-  @media only screen and (min-width: 1280px) and (max-width: 1440px) {
-    /*.avatar {*/
-    /*  width: 100px;*/
-    /*  height: 100px;*/
-
-    /*  border-radius: 50%;*/
-    /*  border: 10px solid rgba(255, 255, 255, 0);*/
-    /*  outline: 2px solid #12151a;*/
-    /*  box-sizing: border-box;*/
-    /*}*/
-  }
-
+  /* ----------  1440px ---------- */
   @media only screen and (min-width: 1441px) {
   }
 </style>
