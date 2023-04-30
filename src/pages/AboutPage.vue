@@ -89,4 +89,10 @@
     height: 100%;
     padding: 80px 0;
   }
+
+  @media only screen and (max-width: 320px) {
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 768px) {
+  }
 </style>

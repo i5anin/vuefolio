@@ -11,7 +11,7 @@
             <v-img v-else :src="noPictures" />
             <p class="title is-4">{{ tech.name }}</p>
             <div class="progress-bar">
-              <div class="progress" :style="{ width: tech.knowledge + '%' }">
+              <!-- <div class="progress" :style="{ width: tech.knowledge + '%' }">
                 <div
                   class="progress-bar"
                   role="progressbar"
@@ -21,7 +21,7 @@
                   aria-valuemax="100">
                   {{ tech.knowledge }}%
                 </div>
-              </div>
+              </div>-->
             </div>
           </div>
         </div>

@@ -112,4 +112,18 @@
     margin-right: 15px;
     flex-shrink: 0;
   }
+
+  /* ---------- 320px ---------- */
+  @media only screen and (max-width: 320px) {
+    .time {
+      display: none;
+    }
+  }
+
+  /* ---------- 321px - 768px ---------- */
+  @media only screen and (min-width: 320px) and (max-width: 768px) {
+    .time {
+      display: none;
+    }
+  }
 </style>

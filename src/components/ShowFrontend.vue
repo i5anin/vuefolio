@@ -6,7 +6,7 @@
       </div>
     </div>
     <div class="value">
-      <v-img src="@/assets/preview/todo-list.png" />
+      <v-img :src="previewImage" />
     </div>
   </div>
 </template>
@@ -15,6 +15,7 @@
   export default {
     name: 'TerminalWindow',
     props: {
+      previewImage: String,
       headerContent: String,
       preContent: String,
     },
@@ -35,11 +36,11 @@
 
   .pre-content {
     font-family: Courier, monospace;
-    font-size: 18px;
+    font-size: 2vw;
   }
 
   .header-content {
-    font-size: 18px;
+    font-size: 2vw;
     color: $secondary-color;
     padding-left: 7px;
   }
@@ -75,12 +76,12 @@
     font-weight: bold;
     padding: 8px;
     overflow: auto;
-    width: calc(100% - 30px); /* subtract 23px from width */
-    height: calc(100% - 50px); /* subtract 23px from height */
-    box-sizing: border-box; /* include padding and border in the height and width calculation */
-    position: absolute; /* position absolutely */
-    left: 15px; /* offset left by 23px */
-    top: 35px; /* offset top by 23px */
+    width: calc(100% - 30px); /* вычесть 23px из ширины */
+    height: calc(100% - 50px); /* вычесть 23px из высоты */
+    box-sizing: border-box; /* включать отступы и границы в расчет высоты и ширины */
+    position: absolute; /* положение абсолютно */
+    left: 15px; /* смещение влево на 23px */
+    top: 35px; /* смещенная верхняя часть на 23px */
     border-radius: 5px;
     border: 1px solid black;
   }
@@ -89,5 +90,32 @@
   }
   .shadow {
     box-shadow: 0px 0px 10px rgba(0, 212, 231, 0.4);
+  }
+  /* ---------- 320px - 768px ---------- */
+  @media only screen and (min-width: 320px) and (max-width: 768px) {
+    .header-content {
+      font-size: 1.5vw !important;
+    }
+  }
+
+  /* ---------- 769px - 1024px ---------- */
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .header-content {
+      font-size: 1.2vw !important;
+    }
+  }
+
+  /* ---------- 1024px - 1440px ---------- */
+  @media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    .header-content {
+      font-size: 1.2vw !important;
+    }
+  }
+
+  /* ----------  1440px ---------- */
+  @media only screen and (min-width: 1440px) {
+    .header-content {
+      font-size: 0.9vw;
+    }
   }
 </style>

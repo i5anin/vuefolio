@@ -1,43 +1,33 @@
 <template>
   <div class="project-page-container">
-    <v-container>
-      <h1 class="title">{{ project.title }}</h1>
-      <div class="flex-center">
-        <ShowBackend
-          pre-content="
-/**
-* Project 1
-* transmitted via props?
-*/
-see the project"
-          header-content="Technologies Used 2, 155 commits"
-          class="terminal-size" />
-        <ShowBackend
-          pre-content="
-/**
-* Project 2
-* transmitted via props!
-*/
-see the project"
-          header-content="Technologies Used 7, 345 commits"
-          class="terminal-size" />
-
-        <ShowFrontend
-          img-content=""
-          header-content="Technologies Used 2, 345 commits"
-          class="terminal-size" />
-      </div>
-    </v-container>
+    <h1 class="title">{{ project.title }}</h1>
+    <div class="flex-center">
+      <v-container>
+        <v-container>
+          <ShowFrontend
+            v-for="(tech, index) in techUsed"
+            :key="index"
+            :img="tech.img"
+            :img-content="tech.img"
+            :header-content="tech.header"
+            class="terminal-size" />
+        </v-container>
+      </v-container>
+    </div>
   </div>
 </template>
 
 <script>
-  import ShowBackend from '@/components/ShowBackend.vue'
   import ShowFrontend from '@/components/ShowFrontend.vue'
+  import projects from '@/data/projects.json'
 
   export default {
+    data() {
+      return {
+        techUsed: projects.myProject.techUsed, // define techUsed here
+      }
+    },
     components: {
-      ShowBackend,
       ShowFrontend,
     },
     name: 'ProjectPage',

@@ -45,7 +45,7 @@
 
 <style scoped>
   .tab {
-    font-size: 20px;
+    font-size: 3vw;
     text-decoration: none;
     /*padding: 20px;*/
 
@@ -66,5 +66,35 @@
   .v-tabs__slider {
     background-color: rgb(255, 140, 0) !important;
     height: 3px !important;
+  }
+
+  /* ---------- 320px - 768px ---------- */
+  @media only screen and (min-width: 320px) and (max-width: 768px) {
+    .tab {
+      font-size: 2vw;
+    }
+
+    /*.v-btn--size-default {*/
+    /*  padding: 0 4px;*/
+    /*}*/
+  }
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .tab {
+      font-size: 1.5vw;
+    }
+  }
+
+  /* ---------- 1024px - 1440px ---------- */
+  @media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    .tab {
+      font-size: 1.2vw;
+    }
+  }
+
+  /* ----------  1440px ---------- */
+  @media only screen and (min-width: 1440px) {
+    .tab {
+      font-size: 1vw;
+    }
   }
 </style>

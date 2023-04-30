@@ -1,7 +1,7 @@
 <template>
   <div class="hello-page-container">
-    <VeritcalLineBar />
-    <v-container>
+    <VeritcalLineBar class="line-bar" />
+    <v-container class="container">
       <div class="flex-center">
         <div>
           <div class="flex">
@@ -19,7 +19,7 @@
           </div>
         </div>
         <div>
-          <TerminalWindow
+          <ShowFrontend
             pre-content="
 /**
 * Project 0
@@ -35,12 +35,12 @@ see the project"
 </template>
 
 <script>
-  import TerminalWindow from '@/components/ShowBackend.vue'
+  import ShowFrontend from '@/components/ShowFrontend.vue'
   import VeritcalLineBar from '@/components/VeritcalLineBar.vue'
 
   export default {
     components: {
-      TerminalWindow,
+      ShowFrontend,
       VeritcalLineBar,
     },
     name: 'HelloPage',
@@ -52,13 +52,10 @@ see the project"
   .info {
     padding: 20px 0;
   }
-  .fio {
-    padding-right: 20px;
-  }
 
   .avatar {
-    width: 100px;
-    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
 
     border-radius: 50%;
   }
@@ -74,11 +71,19 @@ see the project"
     height: 12em;
     width: 16em;
   }
+  .crossed-out {
+    font-size: 3vw;
+  }
+  .color-blue {
+    font-size: 3vw;
+  }
+
   .hello {
-    font-size: 20px;
+    font-size: 3vw;
   }
   .fio {
-    font-size: 4.5rem;
+    font-size: 5vw;
+    padding-right: 20px;
   }
 
   .flex-center {
@@ -98,12 +103,29 @@ see the project"
     .flex-center {
       display: block;
     }
+    .line-bar {
+      display: none;
+    }
+    .terminal-size {
+      height: 11em;
+      width: 13em;
+    }
   }
 
   /* ---------- 321px - 768px ---------- */
-  @media only screen and (min-width: 321px) and (max-width: 768px) {
+  @media only screen and (min-width: 320px) and (max-width: 768px) {
     .flex-center {
       display: block;
+    }
+    .container {
+      padding: 40px;
+    }
+    .line-bar {
+      display: none;
+    }
+    .terminal-size {
+      height: 10em;
+      width: 12em;
     }
   }
 
@@ -111,6 +133,13 @@ see the project"
   @media only screen and (min-width: 769px) and (max-width: 1024px) {
     .flex-center {
       display: block;
+    }
+
+    .container {
+      padding: 0 40px;
+    }
+    .line-bar {
+      display: none;
     }
   }
 
@@ -132,6 +161,22 @@ see the project"
   }
 
   /* ----------  1440px ---------- */
-  @media only screen and (min-width: 1441px) {
+  @media only screen and (min-width: 1440px) {
+    .terminal-size {
+      height: 14em;
+      width: 20em;
+    }
+    .fio {
+      font-size: 5vw;
+    }
+    .hello {
+      font-size: 2.5vw;
+    }
+    .color-blue {
+      font-size: 1.5vw;
+    }
+    .crossed-out {
+      font-size: 1.5vw;
+    }
   }
 </style>

@@ -1,0 +1,22 @@
+{
+  "myProject": {
+    "title": "My Project Title",
+    "techUsed": [
+      { "img": "https://raw.githubusercontent.com/i5anin/vuefolio/main/src/assets/preview/coin.gif",
+        "header": "Technologies Used 1, 145 commits",
+        "url-code": "https://github.com/i5anin/vuefolio",
+        "url-site": ""
+      },
+      { "img": "https://raw.githubusercontent.com/i5anin/vuefolio/main/src/assets/preview/coin.gif",
+        "header": "Technologies Used 2, 2450 commits",
+        "url-code": "https://github.com/i5anin/vuefolio",
+        "url-site": ""
+      },
+      { "img": "https://raw.githubusercontent.com/i5anin/vuefolio/main/src/assets/preview/coin.gif",
+        "header": "Technologies Used 3, 345 commits",
+        "url-code": "https://github.com/i5anin/vuefolio",
+        "url-site": ""
+      }
+    ]
+  }
+}

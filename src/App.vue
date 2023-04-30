@@ -1,7 +1,6 @@
 <template>
   <div class="dark-theme">
     <tab-pages />
-
     <router-view v-slot="{ Component }">
       <transition name="fade" mode="out-in">
         <component class="page-body" :is="Component" />
