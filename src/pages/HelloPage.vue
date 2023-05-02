@@ -19,15 +19,18 @@
           </div>
         </div>
         <div>
-          <ShowFrontend
-            pre-content="
-/**
-* Project 0
-* Vue - fan
-*/
-see the project"
-            header-content="Technologies Used 4, 1245 commits"
-            class="terminal-size" />
+          <v-row>
+            <v-col
+              class="col"
+              v-for="(tech, index) in techUsed"
+              :key="index"
+              cols="4">
+              <ShowFrontend
+                :previewImage="tech.img"
+                :header-content="tech.header"
+                class="terminal-size" />
+            </v-col>
+          </v-row>
         </div>
       </div>
     </v-container>
