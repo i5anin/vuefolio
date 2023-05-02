@@ -2,16 +2,18 @@
   <div class="project-page-container">
     <h1 class="title">{{ project.title }}</h1>
     <div class="flex-center">
-      <v-container>
-        <v-container>
+      <v-row>
+        <v-col
+          class="col"
+          v-for="(tech, index) in techUsed"
+          :key="index"
+          cols="4">
           <ShowFrontend
-            v-for="(tech, index) in techUsed"
-            :key="index"
             :previewImage="tech.img"
             :header-content="tech.header"
             class="terminal-size" />
-        </v-container>
-      </v-container>
+        </v-col>
+      </v-row>
     </div>
   </div>
 </template>
@@ -54,12 +56,18 @@
     display: flex;
     justify-content: center;
   }
+
   .flex-center {
     display: flex;
     justify-content: center;
   }
+
   .terminal-size {
     height: 250px;
-    width: 400px;
+    width: 370px;
+  }
+
+  .col {
+    padding: 40px;
   }
 </style>

@@ -2,22 +2,22 @@
   "myProject": {
     "title": "My Project Title",
     "techUsed": [
-      { "img": "https://raw.githubusercontent.com/i5anin/vuefolio/main/src/assets/preview/coin.gif",
-        "header": "Technologies Used 1, 145 commits",
+      { "img": "./src/assets/preview/coin.gif",
+        "header": "coin",
         "url-code": "https://github.com/i5anin/vuefolio",
         "url-site": ""
       },
-      { "img": "https://raw.githubusercontent.com/i5anin/vuefolio/main/src/assets/preview/evklid.gif",
+      { "img": "./src/assets/preview/evklid.gif",
         "header": "Technologies Used 2, 2450 commits",
         "url-code": "https://github.com/i5anin/vuefolio",
         "url-site": ""
       },
-      { "img": "https://raw.githubusercontent.com/i5anin/vuefolio/main/src/assets/preview/lagoona.gif",
+      { "img": "./src/assets/preview/lagoona.gif",
         "header": "Technologies Used 3, 345 commits",
         "url-code": "https://github.com/i5anin/vuefolio",
         "url-site": ""
       },
-      { "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+      { "img": "./src/assets/preview/moire.png",
         "header": "Technologies Used 3, 345 commits",
         "url-code": "https://github.com/i5anin/vuefolio",
         "url-site": ""
