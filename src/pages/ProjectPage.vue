@@ -7,8 +7,7 @@
           <ShowFrontend
             v-for="(tech, index) in techUsed"
             :key="index"
-            :img="tech.img"
-            :img-content="tech.img"
+            :previewImage="tech.img"
             :header-content="tech.header"
             class="terminal-size" />
         </v-container>
