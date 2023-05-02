@@ -161,10 +161,24 @@
       justify-content: center;
       align-items: center;
     }
+    .avatar {
+      max-width: 200px;
+      max-height: 200px;
+      border-radius: 50%;
+    }
   }
 
   /* ----------  1440px ---------- */
   @media only screen and (min-width: 1440px) {
+    .flex-center {
+      justify-content: space-between;
+      align-items: center;
+    }
+    .flex-center {
+      display: block;
+      justify-content: center;
+      align-items: center;
+    }
     .terminal-size {
       height: 14em;
       width: 20em;
@@ -180,6 +194,11 @@
     }
     .crossed-out {
       font-size: 1.5vw;
+    }
+    .avatar {
+      max-width: 300px;
+      max-height: 300px;
+      border-radius: 50%;
     }
   }
 </style>

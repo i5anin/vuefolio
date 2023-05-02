@@ -89,7 +89,7 @@
     margin: 25px;
   }
   .shadow {
-    box-shadow: 0px 0px 10px rgba(0, 212, 231, 0.4);
+    box-shadow: 0 0 10px rgba(0, 212, 231, 0.4);
   }
   /* ---------- 320px - 768px ---------- */
   @media only screen and (min-width: 320px) and (max-width: 768px) {
